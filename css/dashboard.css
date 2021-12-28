@@ -1,5 +1,6 @@
 :root {
-  --green: #24292f;
+  --green__sidebar: #1f4663;
+  --green__navbar: #082032;
   --yellow: #fbcc34;
   --gry: #dadada;
   --color__body: var(--gry);
@@ -27,9 +28,10 @@ body {
   position: fixed;
   width: 300px;
   height: 100%;
-  background-color: var(--green);
+  background-color: var(--green__sidebar);
   transition: 0.5s;
   overflow: hidden;
+  z-index: 100;
 }
 .sidebar.active {
   width: 62px;
@@ -76,8 +78,9 @@ body {
 .sidebar ul li:first-child {
   margin-bottom: 20px;
 }
-.sidebar ul li :first-child a:last-child:hover {
+.sidebar .sidebar__child__1 :hover {
   background-color: transparent !important;
+  cursor: pointer;
 }
 .sidebar ul li a span:last-child {
   position: relative;
@@ -90,7 +93,7 @@ body {
 /* start navbar */
 .nav__bar {
   position: absolute;
-  background-color: var(--green);
+  background-color: var(--green__navbar);
   height: 62px;
   width: calc(100% - 300px);
   left: 300px;
@@ -110,22 +113,40 @@ body {
   background-color: var(--gry);
   border-radius: 6px;
   color: #000;
-  top: 100%;
+  top: calc(100% - 5px);
+  right: 130px;
   width: 160px;
   height: auto;
   transform: 0.5s;
   display: none;
   z-index: 200;
 }
+.plus_div {
+  display: block;
+  position: absolute;
+  top: -18.5px;
+  left: 130px;
+}
+.plus_div .fas {
+  color: var(--gry);
+  font-size: 30px;
+}
+.plus_div span {
+  position: relative;
+  right: 0;
+}
 .plus__down__ul li {
   position: relative;
   padding: 5px;
   margin: 3px;
 }
-.plus__down__ul li .hello {
-position: absolute;
-border: var(--border_red);
-display: none;
+
+.plus__down__ul li a {
+  text-decoration: none;
+  color: var(--green__navbar);
+}
+.plus__down__ul li:hover {
+  background-color: var(--yellow);
 }
 .plus__down__ul li .fas {
   min-width: 40px;
@@ -166,12 +187,18 @@ display: none;
 .nav__bar .search input {
   background-color: var(--gry);
   border: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
   outline: 0;
   padding-left: 10px;
   color: var(--green);
   width: 190px;
   height: 30px;
   margin-right: -2px;
+}
+
+.nav__bar .search input.active {
+  width: 260px;
 }
 .nav__bar .search div {
   display: flex;
@@ -191,7 +218,7 @@ display: none;
   text-align: center;
 }
 .nav__bar .toogle span:last-child {
-  display: none;
+  display: block;
 }
 .profile_admin img {
   width: 45px;
@@ -213,4 +240,29 @@ display: none;
 .main__body.active {
   width: calc(100% - 66px);
   left: 62px;
+}
+@media screen and (max-width: 900px) {
+  .main__body {
+    width: calc(100% - 66px);
+    left: 62px;
+  }
+  .main__body.active {
+    width: calc(100% - 66px);
+    left: 62px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .main__body {
+    position: relative;
+    width: 100vh;
+    left: 0px;
+  }
+  .main__body.active {
+    width: calc(100% - 4px);
+    left: 0px;
+    right: 0;
+  }
+  .sidebar {
+    display: none;
+  }
 }

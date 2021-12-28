@@ -15,7 +15,7 @@
     <header class="head__er">
       <nav class="sidebar">
         <ul>
-          <li>
+          <li class="sidebar__child__1" onclick="sidebar__child__1()">
             <a href="#">
               <span class="logo"
                 ><svg
@@ -96,8 +96,8 @@
       </nav>
       <nav class="nav__bar">
         <div class="nav__bar_item toogle" onclick="menu__toogle();">
-            <span><i class="fas fa-bars"></span></i>
-            <span><i class="fas fa-times"></i></span>
+            <span class="menu_bars"><i class="fas fa-bars"></span></i>
+            <span class="menu_times"><i class="fas fa-times"></i></span>
         </div>
         <div class="nav__bar_item">
             <div class="search">
@@ -107,11 +107,11 @@
             <div class="plus__down" onclick="puls__down();">
                 <span><i class="fas fa-plus"></i><i class="fas fa-caret-down"></i></span>
                 <ul class="plus__down__ul">
-                    <div class="hello"><i class="fas fa-caret-up"></i></div class="hello">
-                    <li><a href="#"></a>Option 1</li>
-                    <li><a href="#"></a>Option 2</li>
-                    <li><a href="#"></a>Option 3</li>
-                    <li><a href="#"></a>Option 4</li>
+                    <div class="plus_div"><span><i class="fas fa-caret-up"></i></span></div>
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                    <li><a href="#">Option 4</a></li>
                 </ul>
             </div>
             <div class="profile_admin">
@@ -138,6 +138,10 @@
         toogle.classList.toggle('active');
         let sidebar = document.querySelector('.sidebar');
         sidebar.classList.toggle('active');
+        let menu_bars = document.querySelector('.menu_bars');
+        menu_bars.classList.toggle('active');
+        let menu_times = document.querySelector('.menu_times');
+        menu_times.classList.toggle('active');
         let nav__bar = document.querySelector('.nav__bar');
         nav__bar.classList.toggle('active');
         let main__body = document.querySelector('.main__body');
