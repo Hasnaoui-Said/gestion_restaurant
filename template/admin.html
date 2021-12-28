@@ -104,9 +104,10 @@
                 <input type="search" placeholder="Chercher" />
                 <div><i class="fas fa-search"></i></div>
             </div>
-            <div class="plus__down">
+            <div class="plus__down" onclick="puls__down();">
                 <span><i class="fas fa-plus"></i><i class="fas fa-caret-down"></i></span>
-                <ul>
+                <ul class="plus__down__ul">
+                    <div class="hello"><i class="fas fa-caret-up"></i></div class="hello">
                     <li><a href="#"></a>Option 1</li>
                     <li><a href="#"></a>Option 2</li>
                     <li><a href="#"></a>Option 3</li>
@@ -141,6 +142,12 @@
         nav__bar.classList.toggle('active');
         let main__body = document.querySelector('.main__body');
         main__body.classList.toggle('active');
+      };
+      function puls__down(){
+        let plus__down = document.querySelector('.plus__down');
+        plus__down.classList.toggle('active');
+        let plus__down__ul = document.querySelector('.plus__down__ul');
+        plus__down__ul.classList.toggle('active');
       }
     </script>
   </body>

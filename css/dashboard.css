@@ -3,6 +3,9 @@
   --yellow: #fbcc34;
   --gry: #dadada;
   --color__body: var(--gry);
+  --border_red: 2px solid red;
+  --border_bleu: 2px solid rgb(47, 0, 255);
+  --border_green: 2px solid rgb(9, 255, 0);
 }
 body {
   margin: 0;
@@ -101,8 +104,37 @@ body {
   width: calc(100% - 62px);
   left: 62px;
 }
-.plus__down ul {
+
+.plus__down__ul {
+  position: absolute;
+  background-color: var(--gry);
+  border-radius: 6px;
+  color: #000;
+  top: 100%;
+  width: 160px;
+  height: auto;
+  transform: 0.5s;
   display: none;
+  z-index: 200;
+}
+.plus__down__ul li {
+  position: relative;
+  padding: 5px;
+  margin: 3px;
+}
+.plus__down__ul li .hello {
+position: absolute;
+border: var(--border_red);
+display: none;
+}
+.plus__down__ul li .fas {
+  min-width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 25px;
+}
+.plus__down__ul.active {
+  display: block;
 }
 
 .nav__bar_item {
