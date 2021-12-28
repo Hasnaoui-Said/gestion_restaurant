@@ -1,0 +1,167 @@
+:root {
+  --green: #24292f;
+  --yellow: #fbcc34;
+  --gry: #dadada;
+  --color__body: var(--gry);
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.head__er {
+  width: 100%;
+  position: relative;
+}
+/* start sidebar */
+.sidebar {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background-color: var(--green);
+  transition: 0.5s;
+  overflow: hidden;
+}
+.sidebar ul {
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.sidebar ul li {
+  position: relative;
+  width: 100%;
+}
+.search {
+  display: none;
+}
+.sidebar ul li:first-child {
+  margin-bottom: 20px;
+}
+.sidebar ul li:first-child h3 {
+  margin-left: 15px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+}
+.sidebar ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.sidebar ul li .icon:first-child {
+  font-size: 25px;
+  color: #fff;
+}
+.sidebar ul li a:last-child:hover {
+  background-color: var(--yellow);
+}
+.sidebar ul li a span:last-child {
+  position: relative;
+  font-size: 17px;
+  padding: 0 50px;
+  height: 40px;
+  line-height: 40px;
+}
+/* fin sidebar */
+/* start navbar */
+.nav__bar {
+  position: absolute;
+  background-color: var(--green);
+  height: 62px;
+  width: calc(100% - 300px);
+  left: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.plus__down ul {
+  display: none;
+}
+
+.nav__bar_item {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.nav__bar .plus__down,
+.nav__bar .search,
+.nav__bar .profile_admin,
+.nav__bar .toogle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-right: 20px;
+}
+.nav__bar .toogle,
+.nav__bar .plus__down span,
+.nav__bar .search div,
+.nav__bar .profile_admin {
+  cursor: pointer;
+}
+.nav__bar .profile_admin {
+  gap: 5px;
+}
+.nav__bar .search input {
+  background-color: var(--gry);
+  border: none;
+  outline: 0;
+  padding-left: 10px;
+  color: var(--green);
+  width: 190px;
+  height: 30px;
+  margin-right: -2px;
+}
+.nav__bar .search div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+}
+.nav__bar .toogle .fas {
+  min-width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 25px;
+  text-align: center;
+}
+.nav__bar .toogle span:last-child {
+  display: none;
+}
+.profile_admin img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+/* fin nav bar */
+.main__body {
+  position: absolute;
+  border: red solid 2px;
+  width: calc(100% - 300px);
+  height: auto;
+  left: 300px;
+  top: 62px;
+  overflow: hidden;
+}
