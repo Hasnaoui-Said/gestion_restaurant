@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant YouCode</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
     <link
       href="/css/fontawesome-free-5.15.4-web/css/all.css"
       rel="stylesheet"
@@ -95,7 +95,7 @@
         </ul>
       </nav>
       <nav class="nav__bar">
-        <div class="nav__bar_item toogle">
+        <div class="nav__bar_item toogle" onclick="menu__toogle();">
             <span><i class="fas fa-bars"></span></i>
             <span><i class="fas fa-times"></i></span>
         </div>
@@ -130,5 +130,18 @@
     </main>
     <!-- main component -->
     <footer></footer>
+
+    <script>
+      function menu__toogle(){
+        let toogle = document.querySelector('.toogle');
+        toogle.classList.toggle('active');
+        let sidebar = document.querySelector('.sidebar');
+        sidebar.classList.toggle('active');
+        let nav__bar = document.querySelector('.nav__bar');
+        nav__bar.classList.toggle('active');
+        let main__body = document.querySelector('.main__body');
+        main__body.classList.toggle('active');
+      }
+    </script>
   </body>
 </html>
