@@ -1,0 +1,33 @@
+/* Start General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: roboto, 'sans-serif';
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  border-radius: 4px;
+  padding: 12px 30px;
+  width: 100%;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn--primary {
+  color: #fff;
+  background-color: #fbcc34;
+  transition: background 0.2s ease-in-out;
+}
+
+.btn--primary:hover {
+  background-color: #444;
+}
+
+/* End General Styles */
