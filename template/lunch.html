@@ -23,8 +23,110 @@
     <title>Restaurant YouCode | lunch</title>
   </head>
   <body>
+    <!-- Start Header Section -->
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="header__logo">
+            <a href="#"><span>You</span>Restaurant</a>
+          </div>
+          <nav class="header__navigation">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#">
+                  <i class="fas fa-utensils"></i>
+                  <span>Plat du jour</span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">
+                  <i class="fas fa-calendar-week"></i>
+                  <span>Menu du semaine</span>
+                </a>
+              </li>
+              <li class="nav__item user">
+                <a class="nav__link" href="#">
+                  <i class="far fa-user-circle"></i>
+                  <span>Profil</span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">
+                  <i class="far fa-bell"></i>
+                  <span>Notifs</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile__menu">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Start Overlay Box -->
+      <div class="overlay"></div>
+      <!-- End Overlay Box -->
+    </header>
+    <!-- End Header Section -->
+
     <!-- Start lunch Section -->
-    <main class="lunch">Hello World</main>
+    <main class="lunch">
+      <div class="lunch__hero">
+        <h1>menu du jour</h1>
+      </div>
+      <div class="container">
+        <div class="lunch__header">
+          <h2 class="header__title">veuillez choisir votre plat</h2>
+          <span class="header__span"></span>
+          <p class="header__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit Quis
+            explicabo recusandae dolorem lemnae
+          </p>
+        </div>
+        <div class="lunch__content">
+          <div class="lunch__card">
+            <div class="card__content">
+              <div class="card__image">
+                <img src="../assets/images/lunch/plat1.jpg" alt="plat 1" />
+              </div>
+              <ul class="card__list">
+                <li class="card__item">Salade nicoise</li>
+                <li class="card__item">Poulet avec légumes</li>
+                <li class="card__item">Jus d'orange</li>
+              </ul>
+            </div>
+            <div class="card__btn">
+              <button class="btn btn--outline">reserver</button>
+            </div>
+          </div>
+          <div class="lunch__card">
+            <div class="card__content">
+              <div class="card__image">
+                <img src="../assets/images/lunch/plat2.jpg" alt="plat 2" />
+              </div>
+              <ul class="card__list">
+                <li class="card__item">Salade césar</li>
+                <li class="card__item">Poisson avec pattes</li>
+                <li class="card__item">flan caramel</li>
+              </ul>
+            </div>
+            <div class="card__btn">
+              <button class="btn btn--outline">reserver</button>
+            </div>
+          </div>
+          <div class="lunch__image">
+            <div class="lunch__image__container"></div>
+          </div>
+        </div>
+      </div>
+    </main>
     <!-- End lunch Section -->
+
+    <!-- Start Footer Section -->
+    <footer class="footer">
+      <p class="footer__copyright">Copyright 2022 &copy; all right reserved.</p>
+    </footer>
+    <!-- End Footer  Section -->
+    <script src="../js/lunch.js"></script>
   </body>
 </html>
