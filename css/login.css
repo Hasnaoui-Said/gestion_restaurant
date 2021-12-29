@@ -1,0 +1,241 @@
+/* Start General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: roboto, 'sans-serif';
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  border-radius: 4px;
+  padding: 12px 30px;
+  width: 100%;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn--primary {
+  color: #fff;
+  background-color: #fbcc34;
+  transition: background 0.2s ease-in-out;
+}
+
+.btn--primary:hover {
+  background-color: #444;
+}
+
+/* End General Styles */
+
+/* Start Login Section */
+.login {
+  background-color: #fafafa;
+}
+
+.login__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login__info {
+  display: none;
+}
+
+.mobile__logo {
+  margin-bottom: 80px;
+  padding: 13px 0;
+  color: #fff;
+  background-color: #272727;
+  text-align: center;
+}
+
+.mobile__logo span {
+  color: #fbcc34;
+}
+
+.form__header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.form__header h2 {
+  border-bottom: 3px solid #000;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.form {
+  padding: 0 20px;
+}
+
+.form__input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.form__input label {
+  margin-bottom: 5px;
+  color: #444;
+  font-size: 15px;
+}
+
+.form__input input {
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 4px;
+  padding: 8px;
+  outline: none;
+}
+
+::placeholder {
+  color: rgb(192, 192, 192);
+  font-size: 14px;
+}
+
+.form__input__checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.form__input__checkbox input {
+  margin-right: 5px;
+}
+
+.form__input__checkbox span {
+  font-size: 15px;
+}
+
+.form__input__checkbox a {
+  margin-top: 10px;
+  width: 100%;
+  color: #666;
+  font-size: 13px;
+  text-align: start;
+  text-decoration: underline;
+}
+
+.form__btn {
+  display: flex;
+}
+
+.form__footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.form__footer p {
+  color: #666;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Start Media Queries */
+@media screen and (min-width: 320px) {
+  .form {
+    padding: 0;
+  }
+
+  .form__content {
+    width: 300px;
+  }
+
+  .form__input__checkbox a {
+    flex: 1;
+    margin-top: 0;
+    width: auto;
+    text-align: end;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .form__content {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .login__content {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .login__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    background-image: url(../assets/images/login-bg.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.75);
+    background-blend-mode: multiply;
+  }
+
+  .info__content {
+    color: #fff;
+    text-align: center;
+  }
+
+  .info__logo h1 {
+    border: 3px solid #fff;
+    padding: 10px 30px;
+    font-size: 28px;
+  }
+
+  .info__logo span {
+    color: #fbcc34;
+  }
+
+  .info__media {
+    margin-top: 25px;
+    cursor: pointer;
+  }
+
+  .info__media i {
+    margin: 0 3px;
+    font-size: 24px;
+    color: #eee;
+    transition: color 0.4s ease-in-out;
+  }
+
+  .info__media i:hover {
+    color: #fbcc34;
+  }
+
+  .info__copyright {
+    position: absolute;
+    bottom: 20px;
+    left: 20%;
+    margin-top: 25px;
+    color: rgba(202, 196, 196, 0.5);
+    font-size: 14px;
+  }
+
+  .mobile__logo {
+    display: none;
+  }
+
+  .login__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  .form__content {
+    margin: 0 20px;
+  }
+}
+/* End Login Section */

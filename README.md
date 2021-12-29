@@ -19,3 +19,4 @@ UI
 SEO
 
 CSS3
+is a test discord
