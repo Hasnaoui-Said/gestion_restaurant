@@ -30,6 +30,23 @@ a {
   background-color: #444;
 }
 
+.btn--outline {
+  border: 2px solid #000;
+  color: #000;
+}
+
+.btn--dark {
+  color: #fff;
+  border: 2px solid #000;
+  background-color: #000;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn--dark:hover {
+  color: #000;
+  background-color: #fafafa;
+}
+
 /* End General Styles */
 
 /* Start Login Section */

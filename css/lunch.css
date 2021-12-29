@@ -51,11 +51,13 @@ a {
 .btn--black {
   color: #fff;
   background-color: #272727;
+  border: 2px solid transparent;
 }
 
 .btn--black:hover {
-  color: #fff;
-  background-color: #fbcc34;
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #000;
 }
 
 .btn--outline {
@@ -77,7 +79,7 @@ a {
 .header {
   position: relative;
   padding: 17px 0;
-  background-color: #fbcc34;
+  background-color: #eee;
 }
 
 .header__content {
@@ -88,24 +90,21 @@ a {
 
 .header__logo a {
   border: 2px solid #000;
-  padding: 5px;
+  padding: 5px 20px;
   color: #000;
   font-size: 18px;
   font-weight: 500;
 }
 
-.header__logo a span {
-  color: #fafafa;
-}
-
 .header__navigation {
   position: absolute;
   right: 0;
-  top: 64px;
+  top: 65px;
   z-index: 100;
   width: 50%;
-  height: calc(100vh - 64px);
-  background-color: #fff;
+  height: calc(100vh - 65px);
+  border-top: 1px solid rgba(102, 102, 102, 0.2);
+  background-color: #eee;
   transform: translateX(100%);
   transition: all 0.4s ease-in-out;
 }
@@ -145,10 +144,10 @@ a {
 
 .overlay {
   position: absolute;
-  top: 64px;
+  top: 66px;
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
-  height: calc(100vh - 64px);
+  height: calc(100vh - 66px);
   z-index: 50;
   visibility: hidden;
   opacity: 0;
@@ -167,14 +166,13 @@ a {
 .mobile__menu {
   font-size: 25px;
   cursor: pointer;
+  border: 2px solid #272727;
+  padding: 2px;
 }
 
 .mobile__menu i {
+  display: block;
   color: #272727;
-}
-
-.mobile__menu i:hover {
-  color: #fafafa;
 }
 
 /* Start Media Queries */
@@ -190,10 +188,12 @@ a {
   .header__navigation {
     position: static;
     flex: 1;
+    border-top: 0;
+
     width: auto;
     height: auto;
-    transform: translateX(0);
     background-color: transparent;
+    transform: translateX(0);
   }
 
   .nav__list {
@@ -205,12 +205,10 @@ a {
     margin-bottom: 0;
     border-bottom: 0;
     padding: 3px 0;
-    border-bottom: 2px solid transparent;
   }
 
   .nav__item:hover {
     padding-left: 0;
-    border-bottom: 2px solid #272727;
   }
 
   .nav__item:first-of-type {
@@ -228,6 +226,25 @@ a {
   .nav__item.user {
     margin-left: auto;
     margin-right: 20px;
+  }
+
+  .nav__link {
+    position: relative;
+  }
+
+  .nav__link.plat::after {
+    position: absolute;
+    bottom: -5px;
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #272727;
+    transition: width 0.4s ease-in-out;
+  }
+
+  .nav__link.plat:hover::after {
+    width: 100%;
   }
 
   .mobile__menu {
@@ -372,6 +389,15 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .lunch {
+    padding-bottom: 100px;
+  }
+
+  .lunch__header {
+    margin-top: 80px;
+    text-align: center;
+  }
+
   .lunch__content {
     flex-direction: row;
     flex-wrap: wrap;
@@ -386,6 +412,7 @@ a {
   .lunch__hero {
     padding: 120px 0;
   }
+
   .lunch__content {
     align-items: stretch;
     gap: 20px;
@@ -401,10 +428,69 @@ a {
 }
 /* End Lunch Section */
 
+/* Start Feedback Section */
+
+.feedback {
+  padding: 70px 0;
+  background-image: url(../assets/images/lunch/feedback-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.692);
+  background-blend-mode: multiply;
+}
+
+.feedback p {
+  margin-bottom: 5px;
+  color: gray;
+  font-size: 14px;
+}
+
+.feedback__header {
+  text-align: center;
+}
+.feedback__header h2 {
+  color: #fff;
+}
+
+.feedback .header__description {
+  color: #fff;
+}
+
+.feedback__form {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.feedback__imojis {
+  margin-bottom: 25px;
+}
+
+.feedback__form__content {
+  padding: 35px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.feedback__textarea {
+  margin-bottom: 25px;
+  width: 100%;
+  height: 150px;
+}
+
+.feedback__btn {
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+}
+
+/* End Feedback Section */
+
 /* Start Footer Section */
 .footer {
   padding: 25px 0;
-  background-color: #272727;
+  background-color: #eee;
 }
 
 .footer__copyright {
