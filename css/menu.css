@@ -63,8 +63,8 @@ a {
 .btn--outline {
   border: 2px solid #272727;
   background-color: transparent;
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
   transition: all 0.3s ease-in-out;
 }
 
@@ -257,14 +257,8 @@ a {
 }
 /* End Header Section */
 
-/* Start Lunch Section */
-
-.lunch {
-  background-color: #fafafa;
-  padding-bottom: 60px;
-}
-
-.lunch__hero {
+/* Start Menu Hero */
+.hero--section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -278,7 +272,7 @@ a {
   background-blend-mode: multiply;
 }
 
-.lunch__hero h1 {
+.hero--section h1 {
   border: 3px solid #fff;
   padding: 10px;
   color: #fff;
@@ -288,13 +282,26 @@ a {
   letter-spacing: 3px;
 }
 
-.lunch__header {
-  margin: 50px 0;
+@media screen and (min-width: 992px) {
+  .hero--section {
+    padding: 100px 0;
+  }
+}
+/* End Menu Hero */
+
+/* Start Menu Section */
+.menu {
+  padding: 50px 0 10px 0;
+  background-color: #fafafa;
+}
+
+.menu__header {
+  margin-bottom: 60px;
   text-align: center;
 }
 
 .header__title {
-  font-size: 16px;
+  font-size: 25px;
   text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 1.7;
@@ -316,176 +323,132 @@ a {
   letter-spacing: 1px;
 }
 
-.lunch__content {
+.menu__nav {
+  margin-bottom: 40px;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: center;
+}
+
+.menu__list__item {
+  margin: 0 10px;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 3px;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu__list__item::after {
+  position: absolute;
+  bottom: -2px;
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.4s ease-in-out;
+}
+
+.menu__list__item:hover::after {
+  width: 100%;
+}
+
+.menu__list__item--active {
+  border-bottom: 2px solid #000;
+  font-weight: 500;
+}
+
+.menu__item {
+  margin-bottom: 50px;
+}
+
+.menu__plats {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
 }
 
-.lunch__card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.card__content {
-  border: 3px solid rgb(231, 231, 231);
-  padding: 3px;
+.plat__item {
+  border-radius: 5px;
+  padding: 12px;
+  max-width: 425px;
   background-color: #fff;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.card__image img {
-  display: block;
-  width: 100%;
-}
-
-.card__list {
-  margin: 20px 0;
-  padding-left: 20px;
-  list-style-image: url(../assets/images/tick.svg);
-}
-
-.card__item {
-  margin-bottom: 10px;
-  padding-left: 5px;
-  color: #272727;
-  font-size: 16px;
-}
-
-.card__btn {
-  margin-top: 25px;
-}
-
-.lunch__image {
-  display: block;
-  border: 3px solid rgb(231, 231, 231);
-  padding: 3px;
-  width: 100%;
-  height: 380px;
   box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
 }
 
-.lunch__image__container {
-  height: 100%;
-  background-image: url(../assets/images/lunch/chef3.jpg);
-  background-size: cover;
-  background-position: center;
+.plat__image img {
+  display: block;
+  border: 2px solid #eee;
+  width: 100%;
 }
 
+.plat__title {
+  margin: 15px 0 5px 0;
+  padding-left: 10px;
+}
+
+.plat__name {
+  margin-bottom: 20px;
+  padding-left: 10px;
+  color: #666;
+  font-size: 14px;
+}
 /* Start Media Queries */
-
-@media screen and (min-width: 420px) {
-  .header__title {
-    font-size: 25px;
-  }
+@media screen and (min-width: 300px) {
 }
 
-@media screen and (min-width: 500px) {
-  .lunch__card {
-    max-width: 420px;
-  }
+@media screen and (min-width: 400px) {
+}
+
+@media screen and (min-width: 600px) {
 }
 
 @media screen and (min-width: 768px) {
-  .lunch {
-    padding-bottom: 100px;
-  }
-
-  .lunch__header {
-    margin-top: 80px;
-    text-align: center;
-  }
-
-  .lunch__content {
+  .menu__plats {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 
-  .lunch__card {
+  .plat__item {
     width: calc(50% - 20px);
   }
 }
 
 @media screen and (min-width: 992px) {
-  .lunch__hero {
-    padding: 120px 0;
+  .menu {
+    padding: 70px 0 30px 0;
   }
 
-  .lunch__content {
-    align-items: stretch;
+  .menu__header {
+    margin-bottom: 60px;
+  }
+
+  .menu__nav {
+    margin-bottom: 50px;
+  }
+
+  .menu__item {
+    margin-bottom: 60px;
+  }
+
+  .menu__heading {
+    margin-bottom: 35px;
+  }
+
+  .menu__plats {
     gap: 20px;
   }
 
-  .lunch__card {
-    width: calc(25% - 10px);
-  }
-
-  .lunch__image {
-    width: calc(50% - 20px);
+  .plat__item {
+    width: calc(25% - 15px);
   }
 }
-/* End Lunch Section */
-
-/* Start Feedback Section */
-
-.feedback {
-  padding: 70px 0;
-  background-image: url(../assets/images/lunch/feedback-bg.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-color: rgba(0, 0, 0, 0.692);
-  background-blend-mode: multiply;
-}
-
-.feedback p {
-  margin-bottom: 5px;
-  color: gray;
-  font-size: 14px;
-}
-
-.feedback__header {
-  text-align: center;
-}
-.feedback__header h2 {
-  color: #fff;
-}
-
-.feedback .header__description {
-  color: #fff;
-}
-
-.feedback__form {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-}
-
-.feedback__imojis {
-  margin-bottom: 25px;
-}
-
-.feedback__form__content {
-  padding: 35px;
-  background-color: #fff;
-  border-radius: 5px;
-}
-
-.feedback__textarea {
-  margin-bottom: 25px;
-  width: 100%;
-  height: 150px;
-}
-
-.feedback__btn {
-  margin-top: 25px;
-  display: flex;
-  gap: 20px;
-}
-
-/* End Feedback Section */
+/* End Menu Section */
 
 /* Start Footer Section */
 .footer {
