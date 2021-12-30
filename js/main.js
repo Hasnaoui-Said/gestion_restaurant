@@ -10,7 +10,6 @@ hamburgerMenu.addEventListener('click', function () {
 // End Navigation Section
 
 // Start Week Menu Section
-
 const menuListItems = document.querySelectorAll('.menu__list li');
 
 menuListItems.forEach((item) =>
