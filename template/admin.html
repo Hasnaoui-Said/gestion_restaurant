@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant YouCode</title>
     <link rel="stylesheet" href="../css/dashboard.css" />
+    <!-- Font Awesome Link --> 
     <link
-      href="/css/fontawesome-free-5.15.4-web/css/all.css"
       rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
     />
   </head>
   <body>
@@ -16,26 +19,10 @@
       <nav class="sidebar">
         <ul>
           <li class="sidebar__child__1" onclick="sidebar__child__1()">
-            <a href="#">
-              <span class="logo"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="93"
-                  height="47"
-                  viewBox="0 0 93 47"
-                >
-                  <text
-                    id="Logo"
-                    transform="translate(0 30)"
-                    fill="#fff"
-                    font-size="35"
-                    font-family="MaturaMTScriptCapitals, Matura MT Script Capitals"
-                  >
-                    <tspan x="0" y="0">Logo</tspan>
-                  </text>
-                </svg>
-              </span>
-              <h3>YouCode Restaurant</h3>
+            <a href="#" class="bars__times" onclick="menu__toogle();">
+              <span class="side_bars"><i class="fas fa-bars"></span></i>
+              <h3 class="you_restaurant">YouRestaurant</h3>
+              <span class="side_times"><i class="fas fa-times"></i></span>
             </a>
           </li>
           <li class="search">
@@ -95,10 +82,10 @@
         </ul>
       </nav>
       <nav class="nav__bar">
-        <div class="nav__bar_item toogle" onclick="menu__toogle();">
+        <!-- <div class="nav__bar_item toogle">
             <span class="menu_bars"><i class="fas fa-bars"></span></i>
             <span class="menu_times"><i class="fas fa-times"></i></span>
-        </div>
+        </div> -->
         <div class="nav__bar_item">
             <div class="search">
                 <input type="search" placeholder="Chercher" />
@@ -134,14 +121,20 @@
 
     <script>
       function menu__toogle(){
-        let toogle = document.querySelector('.toogle');
-        toogle.classList.toggle('active');
+        // let toogle = document.querySelector('.toogle');
+        // toogle.classList.toggle('active');
         let sidebar = document.querySelector('.sidebar');
         sidebar.classList.toggle('active');
-        let menu_bars = document.querySelector('.menu_bars');
-        menu_bars.classList.toggle('active');
-        let menu_times = document.querySelector('.menu_times');
-        menu_times.classList.toggle('active');
+        let side_bars = document.querySelector('.side_bars');
+        side_bars.classList.toggle('active');
+        let side_times = document.querySelector('.side_times');
+        side_times.classList.toggle('active');
+        // let menu_bars = document.querySelector('.menu_bars');
+        // menu_bars.classList.toggle('active');
+        // let menu_times = document.querySelector('.menu_times');
+        // menu_times.classList.toggle('active');
+        let you_restaurant = document.querySelector('.you_restaurant');
+        you_restaurant.classList.toggle('active');
         let nav__bar = document.querySelector('.nav__bar');
         nav__bar.classList.toggle('active');
         let main__body = document.querySelector('.main__body');
