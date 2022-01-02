@@ -70,7 +70,7 @@ body {
 .bars__times{
   display: flex;
   height: 55px;
-  transition: .5s;
+  transition: all .5s ease-in-out;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -294,16 +294,17 @@ body {
 }
 @media screen and (max-width: 720px) {
   .main__body {
-    position: relative;
-    width: 100vh;
+    width: calc(100% - 4px);
     left: 0px;
   }
   .main__body.active {
     width: calc(100% - 4px);
-    left: 0px;
-    right: 0;
+    left: 0;
   }
   .sidebar {
-    display: none;
+    height: 62px;
+  }
+  .sidebar.active{
+    height: 100%;
   }
 }
