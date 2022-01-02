@@ -11,12 +11,12 @@ body {
   height: 100%;
   place-items: center;
   text-align: center;
-  background: #000;
+  background-image: url(../assets/images/lunch/lunch-header-bg.jpg);
 }
-.container {
+.container__star {
   position: relative;
-  width: 400px;
-  background: #111;
+  width: 100%;
+  background: #082032;
   padding: 20px 30px;
   border: 1px solid #444;
   border-radius: 5px;
@@ -25,15 +25,15 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-.container .post {
+.container__star .post {
   display: none;
 }
-.container .text {
+.container__star .text {
   font-size: 25px;
-  color: #666;
+  color: #fff;
   font-weight: 500;
 }
-.container .edit {
+.container__star .edit {
   position: absolute;
   right: 10px;
   top: 5px;
@@ -42,10 +42,10 @@ body {
   font-weight: 500;
   cursor: pointer;
 }
-.container .edit:hover {
+.container__star .edit:hover {
   text-decoration: underline;
 }
-.container .star-widget input {
+.container__star .star-widget input {
   display: none;
 }
 .star-widget label {
@@ -66,28 +66,28 @@ input#rate-5:checked ~ label {
   color: #fe7;
   text-shadow: 0 0 20px #952;
 }
-#rate-1:checked ~ form header:before {
-  content: "I just hate it ";
+#rate-1:checked ~ form .div:before {
+  content: "Je déteste juste ça ";
 }
-#rate-2:checked ~ form header:before {
-  content: "I don't like it ";
+#rate-2:checked ~ form .div:before {
+  content: "je n'aime pas ça ";
 }
-#rate-3:checked ~ form header:before {
-  content: "It is awesome ";
+#rate-3:checked ~ form .div:before {
+  content: "C'est génial";
 }
-#rate-4:checked ~ form header:before {
-  content: "I just like it ";
+#rate-4:checked ~ form .div:before {
+  content: "je l'aime juste ";
 }
-#rate-5:checked ~ form header:before {
-  content: "I just love it ";
+#rate-5:checked ~ form .div:before {
+  content: "J'adore ";
 }
-.container form {
+.container__star form {
   display: none;
 }
 input:checked ~ form {
   display: block;
 }
-form header {
+form .div {
   width: 100%;
   font-size: 25px;
   color: #fe7;
