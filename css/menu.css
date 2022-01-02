@@ -362,7 +362,12 @@ a {
 }
 
 .menu__item {
+  display: none;
   margin-bottom: 50px;
+}
+
+.menu__item.jeudi {
+  display: block;
 }
 
 .menu__plats {
