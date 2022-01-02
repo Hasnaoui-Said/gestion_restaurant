@@ -69,11 +69,8 @@
    
   }
   .form{
-    
-    width: 400px;
-    border-top: #fbcc34 solid 4px;
-  
-   background-color: white;
+border-top: #fbcc34 solid 4px;
+ background-color: white;
   overflow-wrap: break-word; 
   box-shadow: 20px;  
   }
@@ -94,19 +91,8 @@
     font-size: 20px
     ;
   }
-  @media screen and (max-width: 900px) {
-   
-   
-  }
-  @media screen and (max-width: 720px) {
 
-    .form{
-      border-top: #fbcc34 solid 4px;
-      margin: 25px  100px;
-     background-color: white;
-    overflow-wrap: break-word;
-  box-shadow: 20px; }
+  @media screen and (max-width: 720px) {
   
-   
   }
   
