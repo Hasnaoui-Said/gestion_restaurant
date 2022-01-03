@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant YouCode</title>
+    <link rel="stylesheet" href="../css/user.css" />
+  
+  </head>
+  <body>
+ 
+   
+    <div class="form_container">
+      <img src="../assets/images/head.jpg" alt="head"  class="head_img">
+      <form class="form">
+        <h1>Ajouter un utilisateurs</h1>
+               <div class="test">
+                
+   
+              <input type="text" id="nom" class ="input"  placeholder="Nom d'utilisateur  " name="nom" max="20000" min="0" required> 
+
+              <input type="email" id="email" class ="input"  placeholder="Email" name="email" max="20000" min="0" required> 
+
+              <input list="roles" name="role" id="role" placeholder="  Role" class="input" required>      
+              <datalist id="roles">                            
+              <option value="Admiistratur">       
+              <option value="Staff">             
+              <option value=" Apprenant"> 
+                <option value=" Service de restaurant">       
+              </datalist> 
+ 
+             
+            
+               
+              <input list="Status" name="status" id="status" placeholder=" Status" class="input" required>      
+              <datalist id="Status">                            
+              <option value="Active">       
+              <option value="Désactive">             
+               </datalist> 
+           
+ 
+ 
+ 
+             </div>
+               <button class="boton"> Ajouter</button>
+         
+            </form>
+    
+        </div>
+  
+  </body>
+</html>
