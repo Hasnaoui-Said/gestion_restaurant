@@ -23,7 +23,7 @@
   .head_img {
     width: 100%;
     height: 180px;
-   
+  
   }
 
   h1{
@@ -60,7 +60,7 @@
     
   }
   .search_btn{
-       width: 25px;
+       width: 30px;
        height: 30px;
       
        color: #fbcc34;
@@ -108,15 +108,6 @@ th {
   
  
   @media screen and (max-width: 720px) {
-    table thead tr th {
-        display: none;
-    
-    }
-    table tbody tr td {
-        display: none;
-    
-    }
-   
-  
+ 
   }
   
