@@ -38,6 +38,7 @@ a {
   border-radius: 4px;
   padding: 14px 30px;
   width: 100%;
+
   font-weight: 500;
   letter-spacing: 1px;
   text-align: center;
@@ -98,6 +99,7 @@ a {
 .header__logo a {
   border: 2px solid var(--black-color);
   padding: 5px 20px;
+
   color: #000;
   font-size: 18px;
   font-weight: 500;
@@ -108,9 +110,11 @@ a {
   right: 0;
   top: 65px;
   z-index: 100;
+
+  border-top: 1px solid rgba(102, 102, 102, 0.2);
   width: 65%;
   height: calc(100vh - 65px);
-  border-top: 1px solid rgba(102, 102, 102, 0.2);
+
   background-color: #eee;
   transform: translateX(100%);
   transition: all 0.4s ease-in-out;
@@ -126,8 +130,9 @@ a {
   margin-bottom: 20px;
   border-bottom: 1px solid rgb(206, 206, 206);
   padding-bottom: 5px;
-  cursor: pointer;
+
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .nav__item:hover {
@@ -152,10 +157,12 @@ a {
 .overlay {
   position: absolute;
   top: 66px;
-  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 50;
+
   width: 100%;
   height: calc(100vh - 66px);
-  z-index: 50;
+
+  background-color: rgba(0, 0, 0, 0.7);
   visibility: hidden;
   opacity: 0;
   transition: all 0.4s ease-in-out;
@@ -288,6 +295,7 @@ a {
 .lunch__hero h1 {
   border: 3px solid #fff;
   padding: 10px;
+
   color: #fff;
   font-size: 20px;
   text-transform: uppercase;
