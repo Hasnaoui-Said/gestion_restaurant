@@ -20,10 +20,13 @@ body {
   margin: 0;
   padding: 0;
 }
-.head_img {
-  width: 100%;
+.image{
   height: 180px;
- 
+  border: 3px solid red;
+}
+.image .head_img {
+  width: 100%;
+  height: 100%;
 }
 
 h1{
@@ -76,13 +79,16 @@ display: flex;
   padding:5% 5%;
   border-radius: 20px;
   margin: auto;
-  width: 900px;
+  width: 90%;
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 table{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
-  width: 900px;
+  width: 100%;
   border-collapse: collapse;
 
 }
@@ -92,9 +98,8 @@ text-align: center;
 border-bottom: rgb(199, 194, 194)  solid 1px;
 }
 th {
- 
-  background-color: #fff8e2;
 
+  background-color: #fff8e2;
 }
 table tbody .action .UpDel{
   width: 20px;
@@ -111,10 +116,49 @@ table tbody .action a{
   text-decoration: none;
 }
 
+  caption { 
+    caption-side: bottom;
+}
+
+/* hello */
+
+table caption {
+  text-align: center;
+  margin-top: 20px;
+}
+table .table caption span {
+  text-align: center;
+  margin: 0 3.5px;
+  padding: 5px 100px;
+}
+table caption span:first-child,
+table caption span:last-child {
+  color: black;
+}
+table caption span:nth-child(2) {
+  color: #fff;
+  background-color: #fbcc34;
+}
+table caption span:hover {
+  color: blue;
+  background-color: #fbcc34;
+  cursor: pointer;
+  text-decoration: blue underline;
+}
+/* how are you */
+
+.table-responsive{
+  width: 100%;
+}
 
 
-@media screen and (max-width: 720px) {
 
- 
+@media screen and (max-width: 400px) {
+
+  .head_img {
+    width: 100%;
+    height: 180px;
+   display: flex;
+  }
 
 }
