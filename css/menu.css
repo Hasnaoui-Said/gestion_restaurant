@@ -396,8 +396,16 @@ a {
   border-radius: 5px;
   padding: 12px;
   max-width: 425px;
+  border: 2px solid transparent;
   background-color: #fff;
   box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.plat__item:hover {
+  transform: scale(1.07);
+  border: 2px solid var(--black-color);
 }
 
 .plat__image img {
