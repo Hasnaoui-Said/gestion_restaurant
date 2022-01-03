@@ -2,6 +2,125 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant YouCode</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/CRUDmenu.css" />
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+</head>
+
+<body>
+
+  <img src="../assets/images/head.jpg" alt="head" class="head_img">
+
+  <div class="form_table">
+    <div class="bar_rachercher">
+      <div class="search_box">
+        <input type="text" name="rechercher" placeholder="rechercher" class="search_text">
+        <a href="#" class="search_btn"> <i class="fa fa-search fa-2x"></i></a>
+
+      </div>
+      <a href="AddPlat.html"> <button class="ajouter">Ajouter</button></a>
+
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Titre</th>
+          <th>Ingrédients</th>
+          <th>Catégorie</th>
+          <th>Action</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>t1</td>
+          <td>t1</td>
+          <td>Entrée</td>
+          <td class="action">
+            <a href="UpPlat.html">
+              <button class="UpDel">
+                <i class="fas fa-edit"></i>
+              </button>
+            </a>
+            <button class="UpDel">
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>t2</td>
+          <td>t2</td>
+          <td>Entrée</td>
+          <td class="action">
+            <a href="UpPlat.html">
+              <button class="UpDel">
+                <i class="fas fa-edit"></i>
+              </button>
+            </a>
+            <button class="UpDel">
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>t3</td>
+          <td>t3</td>
+          <td>Plat principal</td>
+          <td class="action">
+            <a href="UpPlat.html">
+              <button class="UpDel">
+                <i class="fas fa-edit"></i>
+              </button>
+            </a>
+            <button class="UpDel">
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td>t4</td>
+          <td>t4</td>
+          <td>Dessert</td>
+          <td class="action">
+            <a href="UpPlat.html">
+              <button class="UpDel">
+                <i class="fas fa-edit"></i>
+              </button>
+            </a>
+            <button class="UpDel">
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+
+
+
+
+</body>
+
+</html>
+<!--<!DOCTYPE html>
+<html lang="en">
+
+<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,73 +138,66 @@
 
   <div class="container">
     <div class="child1">
-
-      <div class="categories">
-
-        <img class="icon_cat"
-          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAZ1JREFUWEftl+ExBEEQhb/LQAhEQAaIABEgAyJABGSADIgAGZwICEEI6l3NqK4xczOzs8Ne1fa/u+qeffv69fTbBROLxcTwMAPKdSTF0DGwmysGPoFn4MvkttRGW3YG3BeA8SknwJP70VK7OiLG0DVwVQHoBlCNoqW2CNAb8BoBdwDsu/9TgGpriwDZh1lclokUoNraGZBnOMXuzNAoDGnCUlOmSVOkRF1bW9Sykuuo+z3Uctu21CYZ2gLUjr0CerTLHkxeS20SUAGOfikb44eaLIThbxs4AtRKWRRZFbU5GTGGmoXpANwCOisMae4y8FA/OWPbDx0sNl4yQ7EEDmOgcoCGWAiZNbXJhz8jlMFjjMEcoFoLIc18GDDnwbUQymEn1NTYgC4AaUchAYuVMNQu79elpTubMDagtdbCPfhP7YdlSMtVwv1XhrpraIiFCKdMmtF/0pPdj4OmrGRphZOoe0gvsu5D890tcPuBuXpWz5ta03MaeSMxI639ApMC1GwhDAhpSq3yu0ytq95lJW3qlrMx9qMbA7mDJ8fQNyaIqSUWlrCiAAAAAElFTkSuQmCC" />
-
-        <input type="text" value="Catégories">
-
-      </div>
-      <div class="said">
-        <div class="search">
-          <input type="search" placeholder="Chercher" />
-          <button><i class="fas fa-search"></i></button>
-
-        </div>
-        <div class="plus">
-          <button class="btn_plus"><i class="fas fa-plus"></i> </button>
+        <div class="bar_rachercher">
+          <div class="search_box">
+            <input type="text" name="rechercher" placeholder="rechercher" class="search_text">
+            <a href="#" class="search_btn"> <i class="fa fa-search fa-2x"></i></a>
+          </div>
+          <a href="add_user.html"> <button class="ajouter">Ajouter</button></a>
         </div>
       </div>
-    </div>
+    
 
     <div class="child2">
       <table class="table_content">
-        <tr>
-          <th>Id</th>
-          <th>Titre</th>
-          <th>Ingrédients</th>
-          <th>Action</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Entrée 1</td>
-          <td>Entrée 1</td>
-          <td>
-            <i class="fas fa-edit"></i>
-            <i class="fas fa-trash-alt"></i>
-          </td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Entrée 2</td>
-          <td>Entrée 2</td>
-          <td>
-            <i class="fas fa-edit"></i>
-            <i class="fas fa-trash-alt"></i>
-          </td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Titre</th>
+            <th>Ingrédients</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Entrée 1</td>
+            <td>Entrée 1</td>
+            <td>
+              <i class="fas fa-edit"></i>
+              <i class="fas fa-trash-alt"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Entrée 2</td>
+            <td>Entrée 2</td>
+            <td>
+              <i class="fas fa-edit"></i>
+              <i class="fas fa-trash-alt"></i>
+            </td>
+          </tr>
 
-        <tr>
-          <td>3</td>
-          <td>Entrée 3</td>
-          <td>Entrée 3</td>
-          <td>
-            <i class="fas fa-edit"></i>
-            <i class="fas fa-trash-alt"></i>
-          </td>
-        </tr>
+          <tr>
+            <td>3</td>
+            <td>Entrée 3</td>
+            <td>Entrée 3</td>
+            <td>
+              <i class="fas fa-edit"></i>
+              <i class="fas fa-trash-alt"></i>
+            </td>
+          </tr>
 
-        <tr>
-          <td>4</td>
-          <td>Entrée 4</td>
-          <td>Entrée 4</td>
-          <td>
-            <i class="fas fa-edit"></i>
-            <i class="fas fa-trash-alt"></i>
-          </td>
-        </tr>
+          <tr>
+            <td>4</td>
+            <td>Entrée 4</td>
+            <td>Entrée 4</td>
+            <td>
+              <i class="fas fa-edit"></i>
+              <i class="fas fa-trash-alt"></i>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
     <div class="child3">
