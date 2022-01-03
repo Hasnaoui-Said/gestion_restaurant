@@ -73,7 +73,7 @@
   .bar_rachercher .ajouter{
     width: 140px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: center;
     border: none;
     background-color: yellow;
@@ -108,14 +108,7 @@ th {
   
  
   @media screen and (max-width: 720px) {
-    table thead tr th {
-        display: none;
-    
-    }
-    table tbody tr td {
-        display: none;
-    
-    }
+  
    
   
   }
