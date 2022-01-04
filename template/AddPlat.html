@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant YouCode</title>
+  <link rel="stylesheet" href="../css/AddUp.css" />
+
+</head>
+
+<body>
+
+ 
+  <div class="form_container">
+    <img src="../assets/images/head.jpg" alt="head" class="head_img">
+    <form class="form">
+      <h1>Ajouter ......</h1>
+      <div class="test">
+       
+        <input list="cats" name="cat" id="cat" placeholder="Choisir une catégorie : " class="input" required>
+        <datalist id="cats">
+          <option value="Entrée">
+          <option value="Plat principal">
+            <option value="Dessert">
+        </datalist>
+
+        <input type="text" id="titrr" class="input" placeholder="Titre  " name="titre" max="200" min="0" required>
+
+
+        <textarea name="ingredients" rows="10" cols="30" placeholder="Les ingrédients :" required></textarea>
+
+
+
+
+      </div>
+      <button class="boton"> Ajouter</button>
+
+    </form>
+
+  </div>
+
+</body>
+
+</html>
