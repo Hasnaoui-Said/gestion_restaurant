@@ -26,7 +26,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.table{
+  volvobleu: @12;
+}
 .examples-table .table caption {
   text-align: center;
   margin-top: 20px;
