@@ -10,47 +10,70 @@
     />
   </head>
   <body>
-    <div class="container__star">
-      <div class="post">
-        <div class="text">Merci pour votre avis</div>
-        <div class="edit">Modifier</div>
-      </div>
-      <div class="star-widget">
-        <input type="radio" name="rate" id="rate-5" />
-        <label for="rate-5" class="fas fa-star"></label>
-        <input type="radio" name="rate" id="rate-4" />
-        <label for="rate-4" class="fas fa-star"></label>
-        <input type="radio" name="rate" id="rate-3" />
-        <label for="rate-3" class="fas fa-star"></label>
-        <input type="radio" name="rate" id="rate-2" />
-        <label for="rate-2" class="fas fa-star"></label>
-        <input type="radio" name="rate" id="rate-1" />
-        <label for="rate-1" class="fas fa-star"></label>
-        <form action="#">
-          <div class="div"></div>
-          <div class="textarea">
-            <textarea
-              cols="30"
-              placeholder="Votre message ....."
-            ></textarea>
+    <div class="body">
+      <div class="avis">
+        <div class="decription">
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ipsam?
+          </h3>
+        </div>
+        <a href="lunch.html">Revenir à l'écron d'accueil</a>
+        <div class="container__star">
+          <h4 class="request">
+            Qu'avez vous pensez sur la qualite du plat d'aujourd'hui?
+          </h4>
+          <div class="post">
+            <div class="text">
+              <h5>Merci de votre constribution</h5>
+              <p>Vos commantaires aident l'équipe de restaurant a ameliore</p>
+            </div>
+            <div class="edit">Modifier votre avis</div>
           </div>
-          <div class="btn">
-            <button type="submit">Envoyer</button>
+          <div class="star-widget">
+            <input type="radio" name="rate" id="rate-5" />
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4" />
+            <label for="rate-4" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-3" />
+            <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2" />
+            <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1" />
+            <label for="rate-1" class="fas fa-star"></label>
+            <form action="#">
+              <div class="div"></div>
+              <div class="textarea">
+                <textarea
+                  cols="30"
+                  placeholder="Décrivez votre expérience ..."
+                ></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit">Envoyer</button>
+              </div>
+            </form>
           </div>
-        </form>
+        </div>
       </div>
     </div>
+
     <script>
       const btn = document.querySelector("button");
       const post = document.querySelector(".post");
       const widget = document.querySelector(".star-widget");
       const editBtn = document.querySelector(".edit");
+      const avis = document.querySelector(".avis");
+      const request = document.querySelector(".request");
       btn.onclick = () => {
         widget.style.display = "none";
         post.style.display = "block";
+        avis.style.gap = "15px";
+        request.style.display = "none";
         editBtn.onclick = () => {
           widget.style.display = "block";
           post.style.display = "none";
+          avis.style.gap = "15px";
+          request.style.display = "block";
         };
         return false;
       };

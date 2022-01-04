@@ -1,0 +1,58 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+.examples-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  border: rgb(231, 10, 10) solid 5px;
+  background: #fff;
+}
+.examples-table .table {
+  width: 70% !important;
+}
+.examples-table .table tbody tr td .img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-image: url(../assets/images/profile.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.table{
+  volvobleu: @12;
+}
+.examples-table .table caption {
+  text-align: center;
+  margin-top: 20px;
+}
+.examples-table .table caption span {
+  text-align: center;
+  margin: 0 3.5px;
+  padding: .5px 4px;
+}
+.examples-table .table caption span:first-child,
+.examples-table .table caption span:last-child {
+  color: black;
+}
+.examples-table .table caption span:nth-child(2) {
+  color: #fff;
+  background-color: #fbcc34;
+}
+.examples-table .table caption span:hover {
+  color: blue;
+  background-color: #fbcc34;
+  cursor: pointer;
+  text-decoration: blue underline;
+}
+
+.examples-table .table .action {
+  text-align: center;
+}
