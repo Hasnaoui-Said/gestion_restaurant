@@ -16,6 +16,7 @@ body{
 }
 .list__plats .img{
     width: 100%;
+    background: rgb(250, 243, 229);
 }
 
 .list__plats .img img{
@@ -164,4 +165,43 @@ body{
     border-radius: 3px;
 }
 
- 
+@media screen and (max-width:575px) {
+    
+    .list__plats .nav__lists .search__plus .search input{
+        width: 200px;
+    }
+    
+    .list__plats .nav__lists .cat{
+        width: auto;
+    }
+    
+    .list__plats .nav__lists .cat .lists{
+        margin-top: 160px;
+        width: 160px;
+    }
+    .nav__lists .cat,
+    .nav__lists .search__plus{
+        margin:0 3% !important;
+    }
+}
+@media screen and (max-width:400px) {
+   
+   .nav__lists .cat h4{
+       display: none;
+   }
+}
+    
+  
+
+
+
+
+
+
+
+    .nav__lists{
+        border:olive 1px solid green !important; 
+        margin: 0 30px !important;
+        padding-inline-end: 0 10px !important;
+    }
+ }
