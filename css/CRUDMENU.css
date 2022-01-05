@@ -1,0 +1,164 @@
+:root {
+  --green__sidebar: #1f4663;
+  --green__navbar: #082032;
+  --yellow: #fbcc34;
+  --gry: #dadada;
+  --color__body: var(--gry);
+  --border_red: 2px solid red;
+  --border_bleu: 2px solid rgb(47, 0, 255);
+  --border_green: 2px solid rgb(9, 255, 0);
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  overflow: scroll;
+  background-color: #F2F2F2 ;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.image{
+  height: 180px;
+  border: 3px solid red;
+}
+.image .head_img {
+  width: 100%;
+  height: 100%;
+}
+
+h1{
+  font-size: 25px;
+  color: black;
+  font-weight:bold;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.bar_rachercher{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    padding-bottom: 2%;
+}
+.search_box{
+position: relative;
+display: flex;
+}
+.search_text{
+  width:450px;
+  height: 40px;
+  border: 1px #000000 solid; 
+  outline: none   ;
+  padding-left: 5%;
+  border-radius: 20px; 
+}
+.search_btn{
+     width: 25px;
+     height: 30px;   
+     color: #fbcc34;
+     position: absolute;
+     right: 15px;
+     top: 5px; ;
+   }
+
+.bar_rachercher .ajouter{
+  width: 140px;
+  height: 40px;
+  background: #fbcc34;
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+  background-color: fbcc34;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.801);
+}
+.form_table{
+    
+    background-color: white;
+  padding:5% 5%;
+  border-radius: 20px;
+  margin: auto;
+  width: 90%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+table{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  width: 100%;
+  border-collapse: collapse;
+
+}
+td, th{
+padding:10px ;
+text-align: center;
+border-bottom: rgb(199, 194, 194)  solid 1px;
+}
+th {
+
+  background-color: #fff8e2;
+}
+table tbody .action .UpDel{
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  border: none;
+  background: white;
+}
+table tbody .action .UpDel:hover{
+  background: #707070;
+  color: white;
+}
+table tbody .action a{
+  text-decoration: none;
+}
+
+  caption { 
+    caption-side: bottom;
+}
+
+/* hello */
+
+table caption {
+  text-align: center;
+  margin-top: 20px;
+}
+table .table caption span {
+  text-align: center;
+  margin: 0 3.5px;
+  padding: 5px 100px;
+}
+table caption span:first-child,
+table caption span:last-child {
+  color: black;
+}
+table caption span:nth-child(2) {
+  color: #fff;
+  background-color: #fbcc34;
+}
+table caption span:hover {
+  color: blue;
+  background-color: #fbcc34;
+  cursor: pointer;
+  text-decoration: blue underline;
+}
+/* how are you */
+
+.table-responsive{
+  width: 100%;
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+  .head_img {
+    width: 100%;
+    height: 180px;
+   display: flex;
+  }
+
+}
