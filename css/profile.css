@@ -6,18 +6,21 @@
   --bgc: #e2e8f0;
   --yellow: #fbcc34;
 }
-
-html {
+html{
   margin: 0;
-  padding: 0;
-  width: 100%;
-  box-sizing: border-box;
+
 }
 body {
-  margin-top: 20px;
   color: #1a202c;
   text-align: left;
   background-color: var(--bgc);
+  box-sizing: border-box;
+}
+.decon__mar .decon__mar_child{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
 }
 .main-body {
   padding: 15px;
@@ -69,8 +72,39 @@ body {
 .h-100 {
   height: 100% !important;
 }
-.btn-info,
-.btn{
-    background: var(--yellow) !important;
-    border: var(--border-grey) !important;
+
+.decon__mar .btn{
+  background: none;
+  color: red;
+  border: var(--border-grey) !important;
+}
+.decon__mar .btn:hover{
+  transition: all .3s ease-in-out;
+  transform: scale(1.03);
+}
+.state{
+    background: green;
+    color: rgb(255, 255, 255) !important;
+    border: 1px rgba(0, 0, 0, 0.541) solid !important;
+    border-radius: 3px;
+    text-align: center;
+    cursor: auto;
+}
+.state span{
+    color: rgb(255, 255, 255) !important;
+}
+.update__pr a{
+  background: rgb(0, 0, 0);
+  color: #ffffff;
+  border: 0.2rem solid rgb(179, 179, 179);
+  margin-right: 0.5rem;
+  box-sizing: border-box;
+  border-radius: 0.3rem;
+}
+.update__pr a:hover{
+  background: #fff;
+  color: #1a202c;
+  border: 0.2rem solid rgb(0, 0, 0);
+  transition: all .3s ease-in-out;
+  transform: scale(1.03);
 }
