@@ -9,7 +9,6 @@ menuListItems.forEach((item) =>
     }
   })
 );
-// End Week Menu Section
 
 const menuItems = document.querySelectorAll('.menu__item');
 
@@ -26,3 +25,4 @@ menuListItems.forEach((item) =>
     });
   })
 );
+// End Week Menu Section
