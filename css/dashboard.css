@@ -81,7 +81,7 @@ body {
   align-items: center;
 }
 .bars__times .side_times,
-.bars__times .side_bars{
+.bars__times .side_bars {
   margin-top: 10px;
 }
 .sidebar .side_times .fas {
@@ -102,7 +102,7 @@ body {
 .sidebar .search {
   display: none;
 }
-.sidebar ul li{
+.sidebar ul li {
   list-style: none;
 }
 .sidebar ul li a {
@@ -311,12 +311,14 @@ body {
   left: 300px;
   transition: 0.5s all ease-in-out;
 }
-.commande{
+.commande {
   margin: 17.5px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+.commande .plat {
 }
 
 @media screen and (max-width: 900px) {
@@ -337,7 +339,7 @@ body {
     width: 100%;
     left: 0px;
   }
-  .nav__bar.active .plus__down{
+  .nav__bar.active .plus__down {
     display: none;
     transition: 0.5s all ease-in-out;
   }
