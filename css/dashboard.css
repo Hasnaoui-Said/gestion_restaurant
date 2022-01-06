@@ -311,6 +311,13 @@ body {
   left: 300px;
   transition: 0.5s all ease-in-out;
 }
+.commande{
+  margin: 17.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 
 @media screen and (max-width: 900px) {
   .main__body {
