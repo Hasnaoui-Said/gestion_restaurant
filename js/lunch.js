@@ -1,22 +1,39 @@
-// Start Day Menu Section
-const choiceOneBtn = document.querySelector('.choice-one-btn');
-const choiceTwoBtn = document.querySelector('.choice-two-btn');
-const choiceOneCard = document.querySelector('.choice-one-card');
-const choiceTwoCard = document.querySelector('.choice-two-card');
+const reservationButtons = document.querySelectorAll('.card__btn');
 const lunchPopup = document.querySelector('.lunch--popup');
 const lunchPopupClose = document.querySelector('.lunch--popup__close');
-const confirmButton = document.querySelector('.popup__buttons button.second');
-const cancelButton = document.querySelector('.popup__buttons button.first');
-const goBackLink = document.querySelector('.go--back--link');
+const cancelButton = document.querySelector('.cancel--button');
+const conformButton = document.querySelector('.conform--button');
 const popupConfirmation = document.querySelector('.popup__confirmation');
 const popupSucced = document.querySelector('.popup__succed');
+const goBackLink = document.querySelector('.go--back-link');
+const platCards = document.querySelectorAll('.card__overlay');
 
-choiceOneBtn.addEventListener('click', function () {
-  lunchPopup.classList.add('lunch--popup--active');
-});
+reservationButtons.forEach((button) => {
+  button.addEventListener('click', function () {
+    for (let i = 0; i < reservationButtons.length; i++) {
+      reservationButtons[i].childNodes[1].disabled = false;
+      popupConfirmation.style.display = 'block';
+      popupSucced.style.display = 'none';
+    }
 
-choiceTwoBtn.addEventListener('click', function () {
-  lunchPopup.classList.add('lunch--popup--active');
+    for (let i = 0; i < platCards.length; i++) {
+      platCards[i].classList.remove('card__overlay--active');
+    }
+
+    lunchPopup.classList.add('lunch--popup--active');
+    selectedCard = this.parentElement.querySelector('.card__overlay');
+
+    conformButton.addEventListener('click', function () {
+      selectedCard.classList.add('card__overlay--active');
+      popupConfirmation.style.display = 'none';
+      popupSucced.style.display = 'block';
+
+      for (let i = 0; i < reservationButtons.length; i++) {
+        reservationButtons[i].childNodes[1].disabled = false;
+      }
+      button.querySelector('.btn').disabled = true;
+    });
+  });
 });
 
 lunchPopupClose.addEventListener('click', function () {
@@ -30,13 +47,3 @@ cancelButton.addEventListener('click', function () {
 goBackLink.addEventListener('click', function () {
   lunchPopup.classList.remove('lunch--popup--active');
 });
-
-confirmButton.addEventListener('click', function () {
-  popupConfirmation.style.display = 'none';
-  popupSucced.style.display = 'block';
-  choiceTwoCard.classList.add('card__overlay--active');
-});
-
-// End Day Menu Section
-choiceTwoCard.classList.remove('card__overlay--active');
-// choiceOneCard.classList.add('card__overlay--active');

@@ -538,20 +538,20 @@ a {
   cursor: pointer;
 }
 
-.popup__buttons button.first {
+.cancel--button {
   background-color: red;
 }
 
-.popup__buttons button.first:hover {
+.cancel--button:hover {
   background-color: rgb(218, 2, 2);
 }
 
-.popup__buttons button.second {
+.conform--button {
   margin-left: 5px;
   background-color: green;
 }
 
-.popup__buttons button.second:hover {
+.conform--button:hover {
   background-color: rgb(2, 109, 2);
 }
 
