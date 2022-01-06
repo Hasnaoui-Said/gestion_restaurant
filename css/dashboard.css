@@ -16,10 +16,7 @@ body {
   height: auto;
   overflow: hidden;
 }
-* {
-  margin: 0;
-  padding: 0;
-}
+
 .head__er {
   width: 100%;
   position: relative;
@@ -33,11 +30,11 @@ body {
   transition: 0.5s;
   overflow: hidden;
   z-index: 100;
-  transition: .5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 .sidebar.active {
   width: 300px;
-  transition: .5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 .info__logo h1 {
   border: 3px solid #fff;
@@ -51,6 +48,8 @@ body {
 .sidebar ul {
   left: 0;
   top: 0;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
 .sidebar ul li {
@@ -60,39 +59,52 @@ body {
 
 .sidebar .side_bars {
   display: block;
-  transition: .5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
+
 .sidebar .side_times {
   display: none;
 }
 .sidebar .side_bars.active {
   display: none;
-  transition: .5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 .sidebar .side_times.active {
   display: block;
-  transition: .5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 .bars__times {
   display: flex;
   height: 55px;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   justify-content: space-evenly;
   align-items: center;
 }
+.bars__times .side_times,
+.bars__times .side_bars{
+  margin-top: 10px;
+}
+.sidebar .side_times .fas {
+  font-size: 18px;
+}
+.sidebar .side_bars .fas {
+  font-size: 25px;
+}
 .you_restaurant {
   display: none;
-  transition: .5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 .you_restaurant.active {
   display: block;
-  transition: .5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 
-.search {
+.sidebar .search {
   display: none;
 }
-
+.sidebar ul li{
+  list-style: none;
+}
 .sidebar ul li a {
   text-decoration: none;
   color: #fff;
@@ -124,11 +136,17 @@ body {
   cursor: pointer;
 }
 .sidebar ul li a span:last-child {
+  display: none;
   position: relative;
   font-size: 17px;
-  padding: 0 50px;
+  padding: 0 10px;
   height: 40px;
   line-height: 40px;
+  transition: 0.5s all ease-in-out;
+}
+.sidebar.active ul li a span:last-child {
+  transition: 0.5s all ease-in-out;
+  display: block;
 }
 /* fin sidebar */
 /* start navbar */
@@ -143,20 +161,20 @@ body {
   justify-content: flex-end;
   align-items: center;
   gap: 10px;
-  transition: .5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 .nav__bar.active {
   width: calc(100% - 300px);
   left: 300px;
-  transition: .5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 .plus__down .plus__down__ul {
   position: absolute;
   background-color: var(--gry);
   border-radius: 6px;
   color: #000;
-  top: calc(100% - 5px);
-  right: 130px;
+  top: calc(100%);
+  right: 120px;
   width: 160px;
   height: auto;
   transform: 0.5s;
@@ -167,7 +185,7 @@ body {
   position: relative;
   display: block;
   top: -16px;
-  left: 130px;
+  left: 90px;
 }
 .plus_div .fas {
   position: absolute;
@@ -175,7 +193,7 @@ body {
   font-size: 25px;
 }
 .plus__down.active span {
-  display: none;
+  display: block;
 }
 .plus__down__ul li {
   position: relative;
@@ -237,6 +255,8 @@ body {
   width: 190px;
   height: 30px;
   margin-right: -2px;
+  color: var(--side__navbar);
+  padding: 5px;
 }
 .nav__bar .search span {
   position: absolute;
@@ -271,27 +291,25 @@ body {
 
 .main__body {
   position: relative;
-  border: red solid 2px;
   width: calc(100% - 62px);
   height: calc(100% - 62px);
   left: 62px;
   top: 62px;
-  transition: .5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 .main__body .content_ {
   position: relative;
   width: calc(100%);
   height: 90vh;
-  border: rgb(157, 255, 0) solid 2px;
   overflow: auto;
   margin: 0;
   padding: 10px 15px;
-  transition: .5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 .main__body.active {
   width: calc(100% - 300px);
   left: 300px;
-  transition: .5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 
 @media screen and (max-width: 900px) {
@@ -312,12 +330,14 @@ body {
     width: 100%;
     left: 0px;
   }
-
+  .nav__bar.active .plus__down{
+    display: none;
+    transition: 0.5s all ease-in-out;
+  }
   .sidebar ul .search {
     display: none;
     display: flex;
     margin-left: 20px;
-    border: red solid 2px;
   }
   .sidebar ul .search {
     position: relative;
