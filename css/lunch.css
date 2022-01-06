@@ -396,6 +396,17 @@ a {
   margin-top: 25px;
 }
 
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  color: #fff;
+  background-color: green;
+}
+
+button[disabled]:hover {
+  background-color: green;
+}
+
 .lunch__image {
   display: block;
   border: 3px solid rgb(231, 231, 231);
