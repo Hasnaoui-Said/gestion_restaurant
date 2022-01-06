@@ -2,6 +2,7 @@
   --green__sidebar: #1f4663;
   --green__navbar: #082032;
   --side__navbar: #082032;
+  --bgc: #ffffff;
   --yellow: #fbcc34;
   --gry: #f5f5f5;
   --color__body: var(--gry);
@@ -291,10 +292,16 @@ body {
 
 .main__body {
   position: relative;
+  background-color: var(--bgc);
   width: calc(100% - 62px);
   height: calc(100% - 62px);
   left: 62px;
   top: 62px;
+  transition: 0.5s all ease-in-out;
+}
+.main__body.active {
+  width: calc(100% - 300px);
+  left: 300px;
   transition: 0.5s all ease-in-out;
 }
 .main__body .content_ {
@@ -303,24 +310,52 @@ body {
   height: 90vh;
   overflow: auto;
   margin: 0;
-  padding: 10px 15px;
+  padding: 25px 15px;
   transition: 0.5s all ease-in-out;
 }
-.main__body.active {
-  width: calc(100% - 300px);
-  left: 300px;
-  transition: 0.5s all ease-in-out;
+.container.active {
+  width: 100%;
 }
-.commande {
-  margin: 17.5px;
+.card{
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+.df{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  width: 100%;
 }
-.commande .plat {
+.m_5{
+  margin: 5px;
 }
-
+.m_r_5{
+  margin-right: 5px;
+}
+.m_l_5{
+  margin-left: 5px;
+}
+.m_b_5{
+  margin-bottom: 5px;
+}
+.m_t_5{
+  margin-top: 5px;
+}
+.ls-plat ul{
+  margin-left: -25px;
+  list-style-image: url(../assets/images/tick.svg);
+}
+.ls-plat ul li{
+  font-size: 2rem;
+}
 @media screen and (max-width: 900px) {
   .main__body {
     width: calc(100% - 62px);
