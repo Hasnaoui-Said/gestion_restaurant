@@ -1,8 +1,9 @@
 :root {
   --green__sidebar: #1f4663;
   --green__navbar: #082032;
+  --side__navbar: #082032;
   --yellow: #fbcc34;
-  --gry: #F5F5F5;
+  --gry: #f5f5f5;
   --color__body: var(--gry);
   --border_red: 2px solid red;
   --border_bleu: 2px solid rgb(47, 0, 255);
@@ -28,13 +29,15 @@ body {
   position: fixed;
   width: 62px;
   height: 100%;
-  background-color: var(--green__sidebar);
+  background-color: var(--side__navbar);
   transition: 0.5s;
   overflow: hidden;
   z-index: 100;
+  transition: .5s all ease-in-out;
 }
 .sidebar.active {
   width: 300px;
+  transition: .5s all ease-in-out;
 }
 .info__logo h1 {
   border: 3px solid #fff;
@@ -57,29 +60,35 @@ body {
 
 .sidebar .side_bars {
   display: block;
+  transition: .5s all ease-in-out;
 }
 .sidebar .side_times {
   display: none;
 }
 .sidebar .side_bars.active {
   display: none;
+  transition: .5s all ease-in-out;
 }
 .sidebar .side_times.active {
   display: block;
+  transition: .5s all ease-in-out;
 }
-.bars__times{
+.bars__times {
   display: flex;
   height: 55px;
   transition: all .5s ease-in-out;
   justify-content: space-evenly;
   align-items: center;
 }
-.you_restaurant{
+.you_restaurant {
   display: none;
+  transition: .5s all ease-in-out;
 }
-.you_restaurant.active{
+.you_restaurant.active {
   display: block;
+  transition: .5s all ease-in-out;
 }
+
 .search {
   display: none;
 }
@@ -96,7 +105,7 @@ body {
   position: relative;
   display: block;
   min-width: 60px;
-  height: 60px;
+  height: 50px;
   line-height: 60px;
   text-align: center;
 }
@@ -125,7 +134,7 @@ body {
 /* start navbar */
 .nav__bar {
   position: absolute;
-  background-color: var(--green__navbar);
+  background-color: var(--side__navbar);
   height: 62px;
   width: calc(100% - 62px);
   left: 62px;
@@ -134,13 +143,14 @@ body {
   justify-content: flex-end;
   align-items: center;
   gap: 10px;
+  transition: .5s all ease-in-out;
 }
 .nav__bar.active {
   width: calc(100% - 300px);
   left: 300px;
+  transition: .5s all ease-in-out;
 }
-
-.plus__down__ul {
+.plus__down .plus__down__ul {
   position: absolute;
   background-color: var(--gry);
   border-radius: 6px;
@@ -154,18 +164,18 @@ body {
   z-index: 200;
 }
 .plus_div {
+  position: relative;
   display: block;
-  position: absolute;
-  top: -18.5px;
+  top: -16px;
   left: 130px;
 }
 .plus_div .fas {
+  position: absolute;
   color: var(--gry);
-  font-size: 30px;
+  font-size: 25px;
 }
-.plus_div span {
-  position: relative;
-  right: 0;
+.plus__down.active span {
+  display: none;
 }
 .plus__down__ul li {
   position: relative;
@@ -175,7 +185,7 @@ body {
 
 .plus__down__ul li a {
   text-decoration: none;
-  color: var(--green__navbar);
+  color: var(--side__navbar);
 }
 .plus__down__ul li:hover {
   background-color: var(--yellow);
@@ -216,31 +226,33 @@ body {
 .nav__bar .profile_admin {
   gap: 5px;
 }
+.nav__bar .nav__bar_item .search {
+  position: relative;
+}
 .nav__bar .search input {
-  background-color: var(--gry);
+  position: relative;
   border: none;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-radius: 3px;
   outline: 0;
-  padding-left: 10px;
-  color: var(--green);
   width: 190px;
   height: 30px;
   margin-right: -2px;
 }
-
-.nav__bar .search input.active {
-  width: 260px;
-}
-.nav__bar .search div {
+.nav__bar .search span {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--yellow);
-  width: 30px;
+  border: #fbcc34 solid 2px;
+  background-color: #fbcc34;
+  border-radius: 0 3px 3px 0;
+  margin-left: 170px;
+  width: 40px;
   height: 30px;
-  border: none;
-  border-radius: 3px;
+}
+.nav__bar .search span .fas {
+  color: rgb(39, 39, 39);
+  font-size: 22px;
 }
 .nav__bar .toogle .fas {
   min-width: 40px;
@@ -249,18 +261,7 @@ body {
   font-size: 20px;
   text-align: center;
 }
-/* .nav__bar .toogle span:last-child {
-  display: none;
-}
-.nav__bar .toogle span:first-child {
-  display: block;
-}
-.nav__bar .toogle span:last-child.active {
-  display: block;
-}
-.nav__bar .toogle span:first-child.active {
-  display: none;
-} */
+
 .profile_admin img {
   width: 45px;
   height: 45px;
@@ -269,42 +270,92 @@ body {
 /* fin nav bar */
 
 .main__body {
-  position: absolute;
+  position: relative;
   border: red solid 2px;
-  width: calc(100% - 66px);
-  height: auto;
+  width: calc(100% - 62px);
+  height: calc(100% - 62px);
   left: 62px;
   top: 62px;
-  overflow: hidden;
-  transition: 0.5s;
+  transition: .5s all ease-in-out;
+}
+.main__body .content_ {
+  position: relative;
+  width: calc(100%);
+  height: 90vh;
+  border: rgb(157, 255, 0) solid 2px;
+  overflow: auto;
+  margin: 0;
+  padding: 10px 15px;
+  transition: .5s all ease-in-out;
 }
 .main__body.active {
-  width: calc(100% - 304px);
+  width: calc(100% - 300px);
   left: 300px;
+  transition: .5s all ease-in-out;
 }
+
 @media screen and (max-width: 900px) {
   .main__body {
-    width: calc(100% - 66px);
+    width: calc(100% - 62px);
     left: 62px;
   }
   .main__body.active {
-    width: calc(100% - 66px);
+    width: calc(100% - 62px);
     left: 62px;
   }
 }
 @media screen and (max-width: 720px) {
+  .nav__bar_item .search {
+    display: none;
+  }
   .main__body {
-    width: calc(100% - 4px);
+    width: 100%;
     left: 0px;
   }
+
+  .sidebar ul .search {
+    display: none;
+    display: flex;
+    margin-left: 20px;
+    border: red solid 2px;
+  }
+  .sidebar ul .search {
+    position: relative;
+  }
+  .sidebar ul .search input {
+    position: relative;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    width: 260px;
+    height: 30px;
+    margin-right: -2px;
+    padding-left: 10px;
+  }
+  .sidebar ul .search span {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #fbcc34 solid 2px;
+    background-color: #fbcc34;
+    border-radius: 0 3px 3px 0;
+    margin-left: 220px;
+    width: 40px;
+    height: 30px;
+  }
+  .sidebar ul .search span .fas {
+    color: rgb(39, 39, 39);
+    font-size: 22px;
+  }
   .main__body.active {
-    width: calc(100% - 4px);
+    width: 100%;
     left: 0;
   }
   .sidebar {
     height: 62px;
   }
-  .sidebar.active{
+  .sidebar.active {
     height: 100%;
   }
 }
