@@ -9,7 +9,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: roboto, 'sans-serif';
+  font-family: roboto, "sans-serif";
   box-sizing: border-box;
 }
 
@@ -250,7 +250,7 @@ a {
     position: absolute;
     bottom: -5px;
 
-    content: '';
+    content: "";
     display: block;
     width: 0%;
     height: 2px;
@@ -359,7 +359,7 @@ a {
 .menu__list__item::after {
   position: absolute;
   bottom: -2px;
-  content: '';
+  content: "";
   display: block;
   width: 0%;
   height: 2px;
