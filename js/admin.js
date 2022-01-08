@@ -17,8 +17,6 @@ function menu__toogle(){
     container.classList.toggle('active');
   };
   function puls__down(){
-    let plus__down = document.querySelector('.plus__down');
-    plus__down.classList.toggle('active');
     let plus__down__ul = document.querySelector('.plus__down__ul');
     plus__down__ul.classList.toggle('active'); 
   }
