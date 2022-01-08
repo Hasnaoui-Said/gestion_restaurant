@@ -23,7 +23,6 @@
     <title>Restaurant YouCode | lunch</title>
   </head>
   <body>
-    
     <!-- Start Header Section -->
     <header class="header">
       <div class="container">
@@ -95,7 +94,7 @@
                 <li class="card__item">Poulet avec légumes</li>
                 <li class="card__item">Jus d'orange</li>
               </ul>
-              <div class="card__overlay choice-one-card">
+              <div class="card__overlay">
                 <i class="fas fa-check-circle"></i>
               </div>
             </div>
@@ -113,7 +112,7 @@
                 <li class="card__item">Poisson avec pattes</li>
                 <li class="card__item">flan caramel</li>
               </ul>
-              <div class="card__overlay choice-two-card">
+              <div class="card__overlay">
                 <i class="fas fa-check-circle"></i>
               </div>
             </div>
@@ -128,6 +127,40 @@
       </div>
     </main>
     <!-- End lunch Section -->
+
+    <!-- Start Lunch Popup Section -->
+    <div class="lunch--popup">
+      <div class="lunch--popup__close">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="lunch--popup__content">
+        <div class="popup__confirmation">
+          <h3 class="popup__title">Are You sure about your choice ?</h3>
+          <div class="popup__image">
+            <img src="../assets/images/menu/plats/plat5.webp" alt="plat" />
+          </div>
+          <p class="popup__description">
+            Lorem ipsum dolor sit amet consectetur adipisicn Amet deleniti eius
+            earum deserunt nalm quaeralm tempore. Labore culpa cupiditate
+            pariatur optioim
+          </p>
+          <div class="popup__buttons">
+            <button class="cancel--button">cancel</button>
+            <button class="conform--button">confirm</button>
+          </div>
+        </div>
+        <div class="popup__succed">
+          <i class="fas fa-check-double"></i>
+          <h3 class="popup__title">Your order has been placed</h3>
+          <p class="popup__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            nemo delectus dolor repellat, veritatis reprehenderit.
+          </p>
+          <a class="go--back-link" href="#">go back</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Lunch Popup Section -->
 
     <!-- Start Footer Section -->
     <footer class="footer">

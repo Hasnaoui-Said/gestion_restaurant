@@ -100,13 +100,17 @@ h1{
 }
 .list__plats .nav__lists .search__plus .add__cat .fas{
     font-size: 20px;
+    color: black;
 }
+
 .list__plats .nav__lists .search__plus .search span:hover,
 .list__plats .nav__lists .search__plus .add__cat:hover{
     background: white;
-    color:#fbcc34 ;
+    color:black ;
+    background:rgb(250, 243, 229) ;
     border:1px solid #fbcc34;
 }
+
 .list__plats .nav__lists .search__plus .add__cat{
     background: #fbcc34;
     border-radius: 2px;
@@ -209,6 +213,22 @@ list-style: none;
     color: white;
     background: gray;
     border-radius: 3px;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+  }
+.image img
+{
+    width: 50%;
+    border-radius: 50%;
+   object-fit: cover;
+}
+.modal-body h3,
+.modal-body p{
+    text-align: center;
 }
 
 
