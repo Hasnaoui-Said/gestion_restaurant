@@ -7,6 +7,8 @@
     <title>Restaurant YouCode</title>
     <!-- link style css -->
     <link rel="stylesheet" href="../../css/dashboard.css"/>
+    <link rel="stylesheet" href="../../css/menu.css" />
+    <title>Restaurant YouCode | lunch</title>
     <!-- bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -14,7 +16,19 @@
 
     <!-- Font Awesome Link --> 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"crossorigin="anonymous"/>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header class="head__er">
@@ -32,13 +46,13 @@
             <span><i class="fas fa-search"></i></span>
           </li>
           <li>
-            <a href="#">
+            <a href="lunch.html">
               <span class="icon"><i class="fas fa-cookie"></i></span>
               <span >Plat du jour</span>
             </a>
           </li>
-          <li title="Menu du semaine">
-            <a href="#">
+          <li class="mon-pos" title="Menu du semaine">
+            <a href="menu.html">
               <span class="icon"><i class="fas fa-poll-h"></i></span>
               <span>Menu du semaine</span>
             </a>
@@ -114,7 +128,362 @@
     <main class="main__body">
       <div class="content_">
         <!-- votre liste ici -->
-       
+        
+    <!-- Start Menu Hero -->
+    <div class="hero--section">
+      <h1>menu du semaine</h1>
+    </div>
+    <!-- End Menu Hero -->
+
+    <!-- Start Menu Section -->
+    <main class="menu">
+      <div class="container">
+        <div class="menu__header">
+          <h2 class="header__title">bienvenue</h2>
+          <span class="header__span"></span>
+          <p class="header__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit Quis
+            explicabo recusandae dolorem lemnae
+          </p>
+        </div>
+        <div class="menu__nav">
+          <ul class="menu__list">
+            <li class="menu__list__item" data-day="lundi">lundi</li>
+            <li class="menu__list__item" data-day="mardi">mardi</li>
+            <li class="menu__list__item" data-day="mercredi">mercredi</li>
+            <li
+              class="menu__list__item menu__list__item--active"
+              data-day="jeudi"
+            >
+              jeudi
+            </li>
+            <li class="menu__list__item" data-day="vendredi">vendredi</li>
+          </ul>
+        </div>
+        <div class="menu__content">
+          <div class="menu__item lundi">
+            <div class="menu__plats">
+              <div class="plat__item">
+                <div class="plat__image">
+                  <img
+                    src="../../assets/images/menu/salades/salade1.webp"
+                    alt="salade"
+                  />
+                </div>
+                <h4 class="plat__title">Salade nicoise</h4>
+                <p class="plat__name">Entrée</p>
+                <button class="btn btn--outline details__btn">
+                  affichez plus
+                </button>
+              </div>
+              <div class="plat__item">
+                <div class="plat__image">
+                  <img
+                    src="../../assets/images/menu/plats/plat1.webp"
+                    alt="salade"
+                  />
+                </div>
+                <h4 class="plat__title">Poulet avec légumes</h4>
+                <p class="plat__name">Plat 1</p>
+                <button class="btn btn--outline details__btn">
+                  affichez plus
+                </button>
+              </div>
+              <div class="plat__item">
+                <div class="plat__image">
+                  <img
+                    src="../../assets/images/menu/plats/plat2.webp"
+                    alt="salade"
+                  />
+                </div>
+                <h4 class="plat__title">Poisson avec pattes</h4>
+                <p class="plat__name">Plat 2</p>
+                <button class="btn btn--outline details__btn">
+                  affichez plus
+                </button>
+              </div>
+              <div class="plat__item">
+                <div class="plat__image">
+                  <img
+                    src="../../assets/images/menu/desserts/dessert1.webp"
+                    alt="salade"
+                  />
+                </div>
+                <h4 class="plat__title">Berry cheesecake</h4>
+                <p class="plat__name">Dessert</p>
+                <button class="btn btn--outline details__btn">
+                  affichez plus
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="menu__item mardi">
+            <div class="menu__plats">
+              <div class="plat__item">
+                <div class="plat__image">
+                  <img
+                    src="../../assets/images/menu/salades/salade2.webp"
+                    alt="salade"
+                  />
+                </div>
+                <h4 class="plat__title">Salade de saison</h4>
+                <p class="plat__name">Entrée</p>
+                <button class="btn btn--outline details__btn">
+                  affichez plus
+                </button>
+              </div>
+              <div class="plat__item">
+                <div class="plat__image">
+                  <img
+                    src="../../assets/images/menu/plats/plat3.webp"
+                    alt="salade"
+                  />
+                </div>
+                <h4 class="plat__title">Couscous veau</h4>
+                <p class="plat__name">Plat 1</p>
+                <button class="btn btn--outline details__btn">
+                  affichez plus
+                </button>
+              </div>
+              <div class="plat__item">
+                <div class="plat__image">
+                  <img
+                    src="../../assets/images/menu/plats/plat4.webp"
+                    alt="salade"
+                  />
+                </div>
+                <h4 class="plat__title">Poulet à la sénégalaise</h4>
+                <p class="plat__name">Plat 2</p>
+                <button class="btn btn--outline details__btn">
+                  affichez plus
+                </button>
+              </div>
+              <div class="plat__item">
+                <div class="plat__image">
+                  <img
+                    src="../../assets/images/menu/desserts/dessert2.webp"
+                    alt="salade"
+                  />
+                </div>
+                <h4 class="plat__title">Mousse au chocolat</h4>
+                <p class="plat__name">Dessert</p>
+                <button class="btn btn--outline details__btn">
+                  affichez plus
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="menu__item mercredi">
+            <div class="menu__plats">
+              <div class="plat__item">
+                <div class="plat__image">
+                  <img
+                    src="../../assets/images/menu/salades/salade3.webp"
+                    alt="salade"
+                  />
+                </div>
+                <h4 class="plat__title">Salade Cezar calories</h4>
+                <p class="plat__name">Entrée</p>
+                <button class="btn btn--outline details__btn">
+                  affichez plus
+                </button>
+              </div>
+              <div class="plat__item">
+                <div class="plat__image">
+                  <img
+                    src="../../assets/images/menu/plats/plat5.webp"
+                    alt="salade"
+                  />
+                </div>
+                <h4 class="plat__title">Tagine avec légumes</h4>
+                <p class="plat__name">Plat 1</p>
+                <button class="btn btn--outline details__btn">
+                  affichez plus
+                </button>
+              </div>
+              <div class="plat__item">
+                <div class="plat__image">
+                  <img
+                    src="../../assets/images/menu/plats/plat6.webp"
+                    alt="salade"
+                  />
+                </div>
+                <h4 class="plat__title">Viande hachée</h4>
+                <p class="plat__name">Plat 2</p>
+                <button class="btn btn--outline details__btn">
+                  affichez plus
+                </button>
+              </div>
+              <div class="plat__item">
+                <div class="plat__image">
+                  <img
+                    src="../../assets/images/menu/desserts/dessert3.webp"
+                    alt="salade"
+                  />
+                </div>
+                <h4 class="plat__title">Brouchette de fruits</h4>
+                <p class="plat__name">Dessert</p>
+                <button class="btn btn--outline details__btn">
+                  affichez plus
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="menu__item jeudi">
+            <div class="menu__plats">
+              <div class="plat__item">
+                <div class="plat__image">
+                  <img
+                    src="../../assets/images/menu/salades/salade4.webp"
+                    alt="salade"
+                  />
+                </div>
+                <h4 class="plat__title">Salade de brique</h4>
+                <p class="plat__name">Entrée</p>
+                <button class="btn btn--outline details__btn">
+                  affichez plus
+                </button>
+              </div>
+              <div class="plat__item">
+                <div class="plat__image">
+                  <img
+                    src="../../assets/images/menu/plats/plat7.webp"
+                    alt="salade"
+                  />
+                </div>
+                <h4 class="plat__title">Tagine pruneaux et poulet</h4>
+                <p class="plat__name">Plat 1</p>
+                <button class="btn btn--outline details__btn">
+                  affichez plus
+                </button>
+              </div>
+              <div class="plat__item">
+                <div class="plat__image">
+                  <img
+                    src="../../assets/images/menu/plats/plat8.webp"
+                    alt="salade"
+                  />
+                </div>
+                <h4 class="plat__title">Darne de poisson braisé</h4>
+                <p class="plat__name">Plat 2</p>
+                <button class="btn btn--outline details__btn">
+                  affichez plus
+                </button>
+              </div>
+              <div class="plat__item">
+                <div class="plat__image">
+                  <img
+                    src="../../assets/images/menu/desserts/dessert4.webp"
+                    alt="salade"
+                  />
+                </div>
+                <h4 class="plat__title">Coupe de sorbet</h4>
+                <p class="plat__name">Dessert</p>
+                <button class="btn btn--outline details__btn">
+                  affichez plus
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="menu__item vendredi">
+            <div class="menu__plats">
+              <div class="plat__item">
+                <div class="plat__image">
+                  <img
+                    src="../../assets/images/menu/salades/salade5.webp"
+                    alt="salade"
+                  />
+                </div>
+                <h4 class="plat__title">Salade nicoise</h4>
+                <p class="plat__name">Entrée</p>
+                <button class="btn btn--outline details__btn">
+                  affichez plus
+                </button>
+              </div>
+              <div class="plat__item">
+                <div class="plat__image">
+                  <img
+                    src="../../assets/images/menu/plats/plat9.webp"
+                    alt="salade"
+                  />
+                </div>
+                <h4 class="plat__title">Couscous avec légumes</h4>
+                <p class="plat__name">Plat 1</p>
+                <button class="btn btn--outline details__btn">
+                  affichez plus
+                </button>
+              </div>
+              <div class="plat__item">
+                <div class="plat__image">
+                  <img
+                    src="../../assets/images/menu/plats/plat10.webp"
+                    alt="salade"
+                  />
+                </div>
+                <h4 class="plat__title">Poisson avec pattes</h4>
+                <p class="plat__name">Plat 2</p>
+                <button class="btn btn--outline details__btn">
+                  affichez plus
+                </button>
+              </div>
+              <div class="plat__item">
+                <div class="plat__image">
+                  <img
+                    src="../../assets/images/menu/desserts/dessert5.webp"
+                    alt="salade"
+                  />
+                </div>
+                <h4 class="plat__title">Berry cheesecake</h4>
+                <p class="plat__name">Dessert</p>
+                <button class="btn btn--outline details__btn">
+                  affichez plus
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu--details">
+          <div class="details__close">
+            <i class="fas fa-times"></i>
+          </div>
+          <div class="menu--details__content">
+            <div class="detail__image"></div>
+            <div class="detail__text">
+              <h4 class="detail__title">Poisson avec pattes</h4>
+              <p class="detail__description">
+                Lorem ipsum, dolor sit amet consectetur adipisincinm elit.
+                Magniham ipsa nesciunt. Deleniti necessitat musi quisquam
+                repellat quia perspiciatis nullam perferendis impedit quibusdam
+                autem ducimus eligendi expeditan
+              </p>
+              <span class="detail__list__title">ingredients :</span>
+              <ul class="detail__list">
+                <li class="detail__item">chicken</li>
+                <li class="detail__item">Critic acid</li>
+                <li class="detail__item">Salt</li>
+                <li class="detail__item">Soybean oil</li>
+              </ul>
+
+              <div class="detail__images">
+                <img src="../../assets/images/menu/plats/plat1.webp" alt="plat1" />
+                <img src="../../assets/images/menu/plats/plat3.webp" alt="plat2" />
+                <img src="../../assets/images/menu/plats/plat4.webp" alt="plat3" />
+                <img src="../../assets/images/menu/plats/plat5.webp" alt="plat4" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End Menu Section -->
+
+    <!-- Start Footer Section -->
+    <footer class="footer card">
+      <p class="footer__copyright">Copyright 2022 &copy; all right reserved.</p>
+    </footer>
+    <!-- End Footer  Section -->
+    <script src="../../js/menu.js"></script>
+    <script src="../../js/main.js"></script>
         <!-- fin votre liste ici -->
       </div>
     </main>
