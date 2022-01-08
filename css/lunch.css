@@ -396,6 +396,17 @@ a {
   margin-top: 25px;
 }
 
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  color: #fff;
+  background-color: green;
+}
+
+button[disabled]:hover {
+  background-color: green;
+}
+
 .lunch__image {
   display: block;
   border: 3px solid rgb(231, 231, 231);
@@ -465,6 +476,120 @@ a {
   }
 }
 /* End Lunch Section */
+
+/* Start Lunch Popup Section  */
+.lunch--popup {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.lunch--popup--active {
+  display: flex;
+}
+
+.lunch--popup__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.lunch--popup__close i {
+  color: #fff;
+  font-size: 25px;
+}
+
+.lunch--popup__close i:hover {
+  color: var(--primary-color);
+}
+
+.lunch--popup__content {
+  width: 400px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.popup__confirmation {
+  display: block;
+}
+
+.popup__image {
+  margin: 20px 0;
+  padding: 1px;
+  border: 3px solid #eee;
+}
+
+.popup__image img {
+  display: block;
+  width: 100%;
+}
+
+.popup__description {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.popup__buttons {
+  text-align: end;
+}
+
+.popup__buttons button {
+  border: 0;
+  border-radius: 3px;
+  padding: 10px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.cancel--button {
+  background-color: red;
+}
+
+.cancel--button:hover {
+  background-color: rgb(218, 2, 2);
+}
+
+.conform--button {
+  margin-left: 5px;
+  background-color: green;
+}
+
+.conform--button:hover {
+  background-color: rgb(2, 109, 2);
+}
+
+.popup__succed {
+  display: none;
+  text-align: center;
+}
+
+.popup__succed i {
+  color: green;
+  font-size: 30px;
+}
+
+.popup__succed h3 {
+  margin: 15px 0;
+}
+
+.popup__succed a {
+  display: inline-block;
+  margin-top: 7px;
+  border-radius: 3px;
+  padding: 7px 20px;
+  color: #fff;
+  background-color: green;
+  text-transform: uppercase;
+}
+/* End Lunch Popup Section  */
 
 /* Start Footer Section */
 .footer {

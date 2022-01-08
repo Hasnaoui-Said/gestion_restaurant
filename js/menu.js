@@ -26,3 +26,19 @@ menuListItems.forEach((item) =>
   })
 );
 // End Week Menu Section
+
+// Start Popup Details
+let detailsButtons = document.querySelectorAll('.details__btn');
+let menuDetails = document.querySelector('.menu--details');
+let detailsClose = document.querySelector('.details__close');
+
+detailsButtons.forEach((button) => {
+  button.addEventListener('click', function () {
+    menuDetails.classList.add('menu--details--show');
+  });
+});
+
+detailsClose.addEventListener('click', function () {
+  menuDetails.classList.remove('menu--details--show');
+});
+// End Popup Details

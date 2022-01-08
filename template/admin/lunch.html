@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant YouCode</title>
+    <!-- link style css -->
+    <link rel="stylesheet" href="../../css/dashboard.css"/>
     <!-- Google Font Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,57 +22,107 @@
       crossorigin="anonymous"
     />
     <!-- Custom CSS Link -->
-    <link rel="stylesheet" href="../css/lunch.css" />
-    <title>Restaurant YouCode | lunch</title>
+    <link rel="stylesheet" href="../../css/lunch.css" />
   </head>
   <body>
-    <!-- Start Header Section -->
-    <header class="header">
-      <div class="container">
-        <div class="header__content">
-          <div class="header__logo">
-            <a href="../index.html"><span>You</span>Restaurant</a>
-          </div>
-          <nav class="header__navigation">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link plat" href="#">
-                  <i class="fas fa-utensils"></i>
-                  <span>Plat du jour</span>
-                </a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link plat" href="./menu.html">
-                  <i class="fas fa-calendar-week"></i>
-                  <span>Menu du semaine</span>
-                </a>
-              </li>
-              <li class="nav__item user">
-                <a class="nav__link" href="#">
-                  <i class="far fa-user-circle"></i>
-                  <span>mohammed</span>
-                </a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">
-                  <i class="far fa-bell"></i>
-                  <span>Notifs</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="mobile__menu">
-            <i class="fas fa-bars"></i>
-          </div>
+    <header class="head__er">
+      <nav class="sidebar">
+        <ul>
+          <li class="sidebar__child__1" onclick="">
+            <a href="#" class="bars__times" onclick="menu__toogle();">
+              <span class="side_bars"><i class="fas fa-bars"></span></i>
+              <h3 class="you_restaurant">YouRestaurant</h3>
+              <span class="side_times"><i class="fas fa-times"></i></span>
+            </a>
+          </li>
+          <li class="search">
+            <input type="search" placeholder="Chercher" />
+            <span><i class="fas fa-search"></i></span>
+          </li>
+          <li>
+            <a href="lunch.html">
+              <span class="icon"><i class="fas fa-cookie"></i></span>
+              <span >Plat du jour</span>
+            </a>
+          </li>
+          <li title="Menu du semaine">
+            <a href="menu.html">
+              <span class="icon"><i class="fas fa-poll-h"></i></span>
+              <span>Menu du semaine</span>
+            </a>
+          </li>
+          <li>
+            <a href="commande-plats.html">
+              <span class="icon"><i class="fas fa-poll-h"></i></span>
+              <span>Commandes</span>
+            </a>
+          </li>
+          <li>
+            <a href="calendrier.html">
+              <span class="icon">
+                <i class="fas fa-calendar-week"></i>
+              </span>
+              <span>Calendrier</span>
+            </a>
+          </li>
+          <li>
+            <a href="setting.html">
+              <span class="icon">
+                <i class="fas fa-cog"></i>
+              </span>
+              <span>Parrametre</span>
+            </a>
+          </li>
+          <li>
+            <a href="profil-admin.html">
+              <span class="icon">
+                <i class="fas fa-user-circle"></i>
+              </span>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="../../index.html">
+              <span class="icon">
+                <i class="fas fa-sign-out-alt"></i>
+              </span>
+              <span>Se deconnecté</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="nav__bar">
+        <!-- <div class="nav__bar_item toogle">
+            <span class="menu_bars"><i class="fas fa-bars"></span></i>
+            <span class="menu_times"><i class="fas fa-times"></i></span>
+        </div> -->
+        <div class="nav__bar_item">
+            <div class="search">
+                <input type="search" placeholder="Chercher" />
+                <span><i class="fas fa-search"></i></span>
+            </div>
+            <div class="plus__down" onclick="puls__down();">
+                <span><i class="fas fa-plus"></i><i class="fas fa-caret-down"></i></span>
+                <ul class="plus__down__ul">
+                    <div class="plus_div"><span><i class="fas fa-caret-up"></i></span></div>
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                    <li><a href="#">Option 4</a></li>
+                </ul>
+            </div>
+            <div class="profile_admin">
+                <img src="../../assets/images/av3.jpg" alt="profile" />
+                <span>Admin</span>
+            </div>
         </div>
-      </div>
-      <!-- Start Overlay Box -->
-      <div class="overlay"></div>
-      <!-- End Overlay Box -->
+      </nav>
     </header>
-    <!-- End Header Section -->
-
-    <!-- Start lunch Section -->
+    <!-- main component -->
+    <main class="main__body">
+      <div class="content_">
+        <!-- votre liste ici -->
+            <!-- Start lunch Section -->
     <main class="lunch">
       <div class="lunch__hero">
         <h1>menu du jour</h1>
@@ -87,7 +140,7 @@
           <div class="lunch__card">
             <div class="card__content">
               <div class="card__image">
-                <img src="../assets/images/lunch/plat1.webp" alt="plat 1" />
+                <img src="../../assets/images/lunch/plat1.webp" alt="plat 1" />
               </div>
               <ul class="card__list">
                 <li class="card__item">Salade nicoise</li>
@@ -105,7 +158,7 @@
           <div class="lunch__card">
             <div class="card__content">
               <div class="card__image">
-                <img src="../assets/images/lunch/plat2.webp" alt="plat 2" />
+                <img src="../../assets/images/lunch/plat2.webp" alt="plat 2" />
               </div>
               <ul class="card__list">
                 <li class="card__item">Salade césar</li>
@@ -137,7 +190,7 @@
         <div class="popup__confirmation">
           <h3 class="popup__title">Are You sure about your choice ?</h3>
           <div class="popup__image">
-            <img src="../assets/images/menu/plats/plat5.webp" alt="plat" />
+            <img src="../../assets/images/menu/plats/plat5.webp" alt="plat" />
           </div>
           <p class="popup__description">
             Lorem ipsum dolor sit amet consectetur adipisicn Amet deleniti eius
@@ -167,7 +220,13 @@
       <p class="footer__copyright">Copyright 2022 &copy; all right reserved.</p>
     </footer>
     <!-- End Footer  Section -->
-    <script src="../js/lunch.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="../../js/lunch.js"></script>
+    <script src="../../js/main.js"></script>
+        <!-- fin votre liste ici -->
+      </div>
+    </main>
+    <!-- main component -->
+    <footer></footer>
+    <script src="../../js/admin.js"></script>
   </body>
 </html>
