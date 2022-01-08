@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant YouCode</title>
+    <!-- link style css -->
+    <link rel="stylesheet" href="../../css/dashboard.css"/>
+    <!-- Google Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="../../css/lunch.css" />
+  </head>
+  <body>
+    <header class="head__er">
+      <nav class="sidebar">
+        <ul>
+          <li class="sidebar__child__1" onclick="">
+            <a href="#" class="bars__times" onclick="menu__toogle();">
+              <span class="side_bars"><i class="fas fa-bars"></span></i>
+              <h3 class="you_restaurant">YouRestaurant</h3>
+              <span class="side_times"><i class="fas fa-times"></i></span>
+            </a>
+          </li>
+          <li class="search">
+            <input type="search" placeholder="Chercher" />
+            <span><i class="fas fa-search"></i></span>
+          </li>
+          <li>
+            <a href="lunch.html">
+              <span class="icon"><i class="fas fa-cookie"></i></span>
+              <span >Plat du jour</span>
+            </a>
+          </li>
+          <li title="Menu du semaine">
+            <a href="menu.html">
+              <span class="icon"><i class="fas fa-poll-h"></i></span>
+              <span>Menu du semaine</span>
+            </a>
+          </li>
+          <li>
+            <a href="commande-plats.html">
+              <span class="icon"><i class="fas fa-poll-h"></i></span>
+              <span>Commandes</span>
+            </a>
+          </li>
+          <li>
+            <a href="calendrier.html">
+              <span class="icon">
+                <i class="fas fa-calendar-week"></i>
+              </span>
+              <span>Calendrier</span>
+            </a>
+          </li>
+          <li>
+            <a href="setting.html">
+              <span class="icon">
+                <i class="fas fa-cog"></i>
+              </span>
+              <span>Parrametre</span>
+            </a>
+          </li>
+          <li>
+            <a href="profil-admin.html">
+              <span class="icon">
+                <i class="fas fa-user-circle"></i>
+              </span>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="../../index.html">
+              <span class="icon">
+                <i class="fas fa-sign-out-alt"></i>
+              </span>
+              <span>Se deconnecté</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="nav__bar">
+        <!-- <div class="nav__bar_item toogle">
+            <span class="menu_bars"><i class="fas fa-bars"></span></i>
+            <span class="menu_times"><i class="fas fa-times"></i></span>
+        </div> -->
+        <div class="nav__bar_item">
+            <div class="search">
+                <input type="search" placeholder="Chercher" />
+                <span><i class="fas fa-search"></i></span>
+            </div>
+            <div class="plus__down" onclick="puls__down();">
+                <span><i class="fas fa-plus"></i><i class="fas fa-caret-down"></i></span>
+                <ul class="plus__down__ul">
+                    <div class="plus_div"><span><i class="fas fa-caret-up"></i></span></div>
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                    <li><a href="#">Option 4</a></li>
+                </ul>
+            </div>
+            <div class="profile_admin">
+                <img src="../../assets/images/av3.jpg" alt="profile" />
+                <span>Admin</span>
+            </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main component -->
+    <main class="main__body">
+      <div class="content_">
+        <!-- votre liste ici -->
+            <!-- Start lunch Section -->
+    <main class="lunch">
+      <div class="lunch__hero">
+        <h1>menu du jour</h1>
+      </div>
+      <div class="container">
+        <div class="lunch__header">
+          <h2 class="header__title">veuillez choisir votre plat</h2>
+          <span class="header__span"></span>
+          <p class="header__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit Quis
+            explicabo recusandae dolorem lemnae
+          </p>
+        </div>
+        <div class="lunch__content">
+          <div class="lunch__card">
+            <div class="card__content">
+              <div class="card__image">
+                <img src="../../assets/images/lunch/plat1.webp" alt="plat 1" />
+              </div>
+              <ul class="card__list">
+                <li class="card__item">Salade nicoise</li>
+                <li class="card__item">Poulet avec légumes</li>
+                <li class="card__item">Jus d'orange</li>
+              </ul>
+              <div class="card__overlay">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+            <div class="card__btn choice-one-btn">
+              <button class="btn btn--outline">reserver</button>
+            </div>
+          </div>
+          <div class="lunch__card">
+            <div class="card__content">
+              <div class="card__image">
+                <img src="../../assets/images/lunch/plat2.webp" alt="plat 2" />
+              </div>
+              <ul class="card__list">
+                <li class="card__item">Salade césar</li>
+                <li class="card__item">Poisson avec pattes</li>
+                <li class="card__item">flan caramel</li>
+              </ul>
+              <div class="card__overlay">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+            <div class="card__btn choice-two-btn">
+              <button class="btn btn--outline">reserver</button>
+            </div>
+          </div>
+          <div class="lunch__image">
+            <div class="lunch__image__container"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End lunch Section -->
+
+    <!-- Start Lunch Popup Section -->
+    <div class="lunch--popup">
+      <div class="lunch--popup__close">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="lunch--popup__content">
+        <div class="popup__confirmation">
+          <h3 class="popup__title">Are You sure about your choice ?</h3>
+          <div class="popup__image">
+            <img src="../../assets/images/menu/plats/plat5.webp" alt="plat" />
+          </div>
+          <p class="popup__description">
+            Lorem ipsum dolor sit amet consectetur adipisicn Amet deleniti eius
+            earum deserunt nalm quaeralm tempore. Labore culpa cupiditate
+            pariatur optioim
+          </p>
+          <div class="popup__buttons">
+            <button class="cancel--button">cancel</button>
+            <button class="conform--button">confirm</button>
+          </div>
+        </div>
+        <div class="popup__succed">
+          <i class="fas fa-check-double"></i>
+          <h3 class="popup__title">Your order has been placed</h3>
+          <p class="popup__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            nemo delectus dolor repellat, veritatis reprehenderit.
+          </p>
+          <a class="go--back-link" href="#">go back</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Lunch Popup Section -->
+
+    <!-- Start Footer Section -->
+    <footer class="footer">
+      <p class="footer__copyright">Copyright 2022 &copy; all right reserved.</p>
+    </footer>
+    <!-- End Footer  Section -->
+    <script src="../../js/lunch.js"></script>
+    <script src="../../js/main.js"></script>
+        <!-- fin votre liste ici -->
+      </div>
+    </main>
+    <!-- main component -->
+    <footer></footer>
+    <script src="../../js/admin.js"></script>
+  </body>
+</html>

@@ -13,10 +13,10 @@ function menu__toogle(){
     nav__bar.classList.toggle('active');
     let main__body = document.querySelector('.main__body');
     main__body.classList.toggle('active');
+    let container = document.querySelector('.container');
+    container.classList.toggle('active');
   };
   function puls__down(){
-    let plus__down = document.querySelector('.plus__down');
-    plus__down.classList.toggle('active');
     let plus__down__ul = document.querySelector('.plus__down__ul');
     plus__down__ul.classList.toggle('active'); 
   }

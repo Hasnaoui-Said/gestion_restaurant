@@ -1,7 +1,8 @@
 :root {
   --green__sidebar: #1f4663;
   --green__navbar: #082032;
-  --side__navbar: #082032;
+  --side__navbar: #fff;
+  --bgc: #ffffff;
   --yellow: #fbcc34;
   --gry: #f5f5f5;
   --color__body: var(--gry);
@@ -37,7 +38,7 @@ body {
   transition: 0.5s all ease-in-out;
 }
 .info__logo h1 {
-  border: 3px solid #fff;
+  border: 3px solid #000;
   padding: 10px 30px;
   font-size: 20px;
 }
@@ -107,7 +108,7 @@ body {
 }
 .sidebar ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
   display: flex;
   align-items: center;
   padding: 0;
@@ -123,7 +124,7 @@ body {
 }
 .sidebar ul li .icon:first-child {
   font-size: 25px;
-  color: #fff;
+  color: #000;
 }
 .sidebar ul li a:last-child:hover {
   background-color: var(--yellow);
@@ -203,7 +204,7 @@ body {
 
 .plus__down__ul li a {
   text-decoration: none;
-  color: var(--side__navbar);
+  color: #000;
 }
 .plus__down__ul li:hover {
   background-color: var(--yellow);
@@ -232,7 +233,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: #000;
   margin-right: 20px;
 }
 .nav__bar .toogle,
@@ -255,7 +256,8 @@ body {
   width: 190px;
   height: 30px;
   margin-right: -2px;
-  color: var(--side__navbar);
+  color: #000;
+  background-color: #eee;
   padding: 5px;
 }
 .nav__bar .search span {
@@ -291,10 +293,16 @@ body {
 
 .main__body {
   position: relative;
+  background-color: #eee;
   width: calc(100% - 62px);
   height: calc(100% - 62px);
   left: 62px;
   top: 62px;
+  transition: 0.5s all ease-in-out;
+}
+.main__body.active {
+  width: calc(100% - 300px);
+  left: 300px;
   transition: 0.5s all ease-in-out;
 }
 .main__body .content_ {
@@ -303,22 +311,110 @@ body {
   height: 90vh;
   overflow: auto;
   margin: 0;
-  padding: 10px 15px;
+  padding: 25px 15px;
   transition: 0.5s all ease-in-out;
 }
-.main__body.active {
-  width: calc(100% - 300px);
-  left: 300px;
-  transition: 0.5s all ease-in-out;
+/* fin nav bar */
+.container.active {
+  width: 100%;
 }
-.commande {
-  margin: 17.5px;
+.card {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+.df {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  width: 100%;
 }
-.commande .plat {
+.m_5 {
+  margin: 5px;
+}
+.m_r_5 {
+  margin-right: 5px;
+}
+.m_l_5 {
+  margin-left: 5px;
+}
+.m_b_5 {
+  margin-bottom: 5px;
+}
+.m_t_5 {
+  margin-top: 5px;
+}
+.item-commandes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 2%;
+}
+.row-commandes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2%;
+}
+.row-commandes:nth-of-type(1) {
+  flex-basis: 70%;
+}
+.row-commandes:nth-of-type(2) {
+  flex-basis: 30%;
+}
+@media screen and (max-width: 1060px) {
+  .row-commandes:nth-of-type(1) {
+    flex-basis: 60%;
+  }
+  .row-commandes:nth-of-type(2) {
+    flex-basis: 40%;
+  }
+  .container.active .item-commandes {
+    flex-direction: column;
+  }
+}
+
+.ls-plat ul {
+  margin-left: -25px;
+  list-style-image: url(../assets/images/tick.svg);
+}
+.ls-plat ul li {
+  font-size: 2rem;
+}
+.avatar div {
+  position: relative;
+}
+.avatar img {
+  position: absolute;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+.avatar img:nth-child(2) {
+  margin-left: 25px;
+}
+.avatar img:nth-child(3) {
+  margin-left: 40px;
+}
+.avatar div span {
+  position: absolute;
+  margin-left: 80px;
+  margin-top: 25px;
+}
+
+.quantite_commande h4 {
+  background-color: #fbcc34;
+  border-radius: 3.5px;
+  color: #fff;
+  margin: 20px 20px 40px 20px;
+  padding: 3px;
 }
 
 @media screen and (max-width: 900px) {
@@ -357,6 +453,8 @@ body {
     border-radius: 3px;
     outline: 0;
     width: 260px;
+    color: #eee;
+    background-color: #eee;
     height: 30px;
     margin-right: -2px;
     padding-left: 10px;
