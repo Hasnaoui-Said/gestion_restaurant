@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant YouCode</title>
+    <link rel="stylesheet" href="../../../css/dashboard.css"/>
+    <link rel="stylesheet" href="../../../css/plat_commande.css"/>
+    <!-- bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Font Awesome Link --> 
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="head__er">
+      <nav class="sidebar">
+        <ul>
+          <li class="sidebar__child__1" onclick="">
+            <a href="#" class="bars__times" onclick="menu__toogle();">
+              <span class="side_bars"><i class="fas fa-bars"></span></i>
+              <h3 class="you_restaurant">YouRestaurant</h3>
+              <span class="side_times"><i class="fas fa-times"></i></span>
+            </a>
+          </li>
+          <li class="search">
+            <input type="search" placeholder="Chercher" />
+            <span><i class="fas fa-search"></i></span>
+          </li>
+          <li title="dashboard">
+            <a href="dashboard.html">
+              <span class="icon"><i class="fas fa-house-flood"></i></span>
+              <span >Dashboard</span>
+            </a>
+          </li>
+          <li title="Users">
+            <a href="users.html">
+              <span class="icon">
+                <i class="fas fa-users"></i>
+              </span>
+              <span>Utilisateurs</span>
+            </a>
+          </li>
+          <li title="Commandes"  class="mon-pos">
+            <a href="commandes.html">
+              <span class="icon">
+                <i class="fas fa-chart-line"></i>
+              </span>
+              <span>Commandes</span>
+            </a>
+          </li>
+          <li title="Reviews">
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-pencil-alt"></i>
+              </span>
+              <span>Avis</span>
+            </a>
+          </li>
+          <li title="Foods">
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-utensils"></i>
+              </span>
+              <span>Plats</span>
+            </a>
+          </li>
+          <li title="calendar">
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-calendar-week"></i>
+              </span>
+              <span>calendrier</span>
+            </a>
+          </li>
+          <li title="Se deconnecté">
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-sign-out-alt"></i>
+              </span>
+              <span>Se deconnecté</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="nav__bar">
+        <!-- <div class="nav__bar_item toogle">
+            <span class="menu_bars"><i class="fas fa-bars"></span></i>
+            <span class="menu_times"><i class="fas fa-times"></i></span>
+        </div> -->
+        <div class="nav__bar_item">
+            <div class="search">
+                <input type="search" placeholder="Chercher" />
+                <span><i class="fas fa-search"></i></span>
+            </div>
+            <div class="plus__down" onclick="puls__down();">
+                <span><i class="fas fa-plus"></i><i class="fas fa-caret-down"></i></span>
+                <ul class="plus__down__ul">
+                    <div class="plus_div"><span><i class="fas fa-caret-up"></i></span></div>
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                    <li><a href="#">Option 4</a></li>
+                </ul>
+            </div>
+            <div class="profile_admin">
+                <img src="../../../assets/images/av1.jpg" alt="profile" />
+                <span>Mohammed </span>
+            </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main component -->
+    <main class="main__body">
+      <div class="content_">
+        <!-- votre liste ici -->
+        <div class="card">
+          <img src="../../../assets/images/commande/cmd-1.jpg" width="100%" alt="">
+        </div>
+        <div class="">
+          <div class="list-row">
+            <div class="commades-feed">
+              <div class="commandes">
+                <div class="plats-au">
+                  <div class="">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta itaque voluptate eius similique, nemo quisquam.
+                  </div>
+                </div>
+                <div class="plats-au">
+                  <div class="plat-1">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="df">
+                                <img class="" src="../../../assets/images/lunch/plat1.webp" width="100%" alt="plat 1" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ls-plat">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <ul class="m_5">
+                                  <div class="fa-text-height">- Poulet avec légumes</div>
+                                  <div class="fa-text-height">- Salade nicoise</div>
+                                  <div class="fa-text-height">- Jus d'orange</div>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cokies-choix">
+                        <div class="item-choix">
+                          <div class="pro-choix">
+                            <img class="img-1" src="../../../assets/images/av1.jpg" width="35" height="35" alt="">
+                            <img class="img-2" src="../../../assets/images/av2.jpg" width="35" height="35" alt="">
+                            <img class="img-3" src="../../../assets/images/av3.jpg" width="35" height="35" alt="">
+                            <span><a href="#">...+176</a></span>
+                          </div>
+                        </div>
+                        <div class="item-choix text-center quantite_commande">
+                          <h4 class="">179/200</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="plat-2">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="df">
+                                <img class="" src="../../../assets/images/lunch/plat2.webp" width="100%" alt="plat 1" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ls-plat">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <ul class="m_5">
+                                  <div class="fa-text-height">- Poulet avec légumes</div>
+                                  <div class="fa-text-height">- Salade nicoise</div>
+                                  <div class="fa-text-height">- Jus d'orange</div>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cokies-choix">
+                        <div class="item-choix">
+                          <div class="pro-choix">
+                            <img class="img-1" src="../../../assets/images/av1.jpg" width="35" height="35" alt="">
+                            <img class="img-2" src="../../../assets/images/av2.jpg" width="35" height="35" alt="">
+                            <img class="img-3" src="../../../assets/images/av3.jpg" width="35" height="35" alt="">
+                            <span><a href="#">...+176</a></span>
+                          </div>
+                        </div>
+                        <div class="item-choix text-center quantite_commande">
+                          <h4 class="">179/200</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="commades-feed greeeen">
+              <div class="commandes">
+                <div class="plats-hier">
+                  <div class="">
+                    <h4>Avis</h4>
+                    <p>Avis d'utilisateurs sur le plat d'hier</p>
+                  </div>
+                </div>
+                <div class="plats-hier">
+                  <div class="plat-1">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="df">
+                                <img class="" src="../../../assets/images/menu/plats/plat10.webp" width="100%" alt="plat 1" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ls-plat">
+                            <div class="row">
+                              <div class="col-md-12 text-center">
+                                <ul class="m_5">
+                                  <div class="fa-text-height">- Poulet avec légumes</div>
+                              </div>
+                              <div class="col-md-2"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <p class="text-center">Lorem, ipsum.</p>
+                        </div>
+                        <div class="col-md-6 ">
+                          <h5 class="rev-plat text-center">4.5/5</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="plat-1">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="df">
+                                <img class="" src="../../../assets/images/menu/plats/plat4.webp" width="100%" alt="plat 1" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ls-plat">
+                            <div class="row">
+                              <div class="col-md-12 text-center">
+                                <ul class="m_5">
+                                  <div class="fa-text-height">- Poulet avec légumes</div>
+                              </div>
+                              <div class="col-md-2"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <p class="text-center">Lorem, ipsum.</p>
+                        </div>
+                        <div class="col-md-6 ">
+                          <h5 class="rev-plat text-center">4.5/5</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="commantaires">
+                  <div class="">
+                    <h5>Des commantaires</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reviewing">
+            <div class="auter-back">
+              <div class="item-auter-1">
+                <h3>Autre Avis</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, odio.</p>
+              </div>
+              <div class="item-auter-2 card">
+                <div class="information">
+                  <div class="">
+                    <img src="../../../assets/images/av1.jpg" width="55" height="55" alt="">
+                  </div>
+                  <div class="">
+                    <strong>Mohammed sakharkhane</strong>
+                    <p>
+                      Apprenat, 24 mars 2021
+                    </p>
+                  </div>
+                </div>
+                <div class="essues">
+                  <button type="button" class="">Excellent</button>
+                  <button type="button" class="">Bonne service</button>
+                  <button type="button" class="">Good service</button>
+                </div>
+                <div class="commantaire-auter">
+                  <div class="autre">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum delectus, cumque ad aspernatur dignissimos deleniti iusto ea adipisci impedit repudiandae neque, corporis sit natus dolorem cum fuga molestiae culpa! Soluta tenetur eos impedit amet rem exercitationem vero tempora illo quaerat illum suscipit, voluptatibus dolorem! Neque tempore velit eius nostrum accusamus!
+                    </p>
+                    <div class="are">
+                       <label for="rate" class="text-center">4/5</label>
+                       <div class="form text-center">
+                        <span><i class="fas fa-star bgc-star"></i></span>
+                        <span><i class="fas fa-star bgc-star"></i></span>
+                        <span><i class="fas fa-star bgc-star"></i></span>
+                        <span><i class="fas fa-star bgc-non"></i></span>
+                        <span><i class="fas fa-star bgc-non"></i></span>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-auter-2 card">
+                <div class="information">
+                  <div class="">
+                    <img src="../../../assets/images/av2.jpg" width="55" height="55" alt="">
+                  </div>
+                  <div class="">
+                    <strong>Ahmed sakharkhane</strong>
+                    <p>
+                      Apprenat, 04 mars 2021
+                    </p>
+                  </div>
+                </div>
+                <div class="essues">
+                  <button type="button" class="">Excellent</button>
+                  <button type="button" class="">Bonne service</button>
+                  <button type="button" class="">Good service</button>
+                </div>
+                <div class="commantaire-auter">
+                  <div class="autre">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum delectus, cumque ad aspernatur dignissimos deleniti iusto ea adipisci impedit repudiandae neque, corporis sit natus dolorem cum fuga molestiae culpa! Soluta tenetur eos impedit amet rem exercitationem vero tempora illo quaerat illum suscipit, voluptatibus dolorem! Neque tempore velit eius nostrum accusamus!
+                    </p>
+                    <div class="are">
+                       <label for="rate" class="text-center">4/5</label>
+                       <div class="form text-center">
+                        <span><i class="fas fa-star bgc-star"></i></span>
+                        <span><i class="fas fa-star bgc-star"></i></span>
+                        <span><i class="fas fa-star bgc-star"></i></span>
+                        <span><i class="fas fa-star bgc-non"></i></span>
+                        <span><i class="fas fa-star bgc-non"></i></span>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-auter-2 card">
+                <div class="information">
+                  <div class="">
+                    <img src="../../../assets/images/av3.jpg" width="55" height="55" alt="">
+                  </div>
+                  <div class="">
+                    <strong>Mohammed sakharkhane</strong>
+                    <p>
+                      Apprenat, 24 mars 2021
+                    </p>
+                  </div>
+                </div>
+                <div class="essues">
+                  <button type="button" class="">Excellent</button>
+                  <button type="button" class="">Bonne service</button>
+                  <button type="button" class="">Good service</button>
+                </div>
+                <div class="commantaire-auter">
+                  <div class="autre">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum delectus, cumque ad aspernatur dignissimos deleniti iusto ea adipisci impedit repudiandae neque, corporis sit natus dolorem cum fuga molestiae culpa! Soluta tenetur eos impedit amet rem exercitationem vero tempora illo quaerat illum suscipit, voluptatibus dolorem! Neque tempore velit eius nostrum accusamus!
+                    </p>
+                    <div class="are">
+                       <label for="rate" class="text-center">4/5</label>
+                       <div class="form text-center">
+                        <span><i class="fas fa-star bgc-star"></i></span>
+                        <span><i class="fas fa-star bgc-star"></i></span>
+                        <span><i class="fas fa-star bgc-star"></i></span>
+                        <span><i class="fas fa-star bgc-non"></i></span>
+                        <span><i class="fas fa-star bgc-non"></i></span>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-auter-2 card">
+                <div class="information">
+                  <div class="">
+                    <img src="../../../assets/images/av2.jpg" width="55" height="55" alt="">
+                  </div>
+                  <div class="">
+                    <strong>Mohammed sakharkhane</strong>
+                    <p>
+                      Apprenat, 24 mars 2021
+                    </p>
+                  </div>
+                </div>
+                <div class="essues">
+                  <button type="button" class="">Excellent</button>
+                  <button type="button" class="">Bonne service</button>
+                  <button type="button" class="">Good service</button>
+                </div>
+                <div class="commantaire-auter">
+                  <div class="autre">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum delectus, cumque ad aspernatur dignissimos deleniti iusto ea adipisci impedit repudiandae neque, corporis sit natus dolorem cum fuga molestiae culpa! Soluta tenetur eos impedit amet rem exercitationem vero tempora illo quaerat illum suscipit, voluptatibus dolorem! Neque tempore velit eius nostrum accusamus!
+                    </p>
+                    <div class="are">
+                       <label for="rate" class="text-center">4/5</label>
+                       <div class="form text-center">
+                        <span><i class="fas fa-star bgc-star"></i></span>
+                        <span><i class="fas fa-star bgc-star"></i></span>
+                        <span><i class="fas fa-star bgc-star"></i></span>
+                        <span><i class="fas fa-star bgc-non"></i></span>
+                        <span><i class="fas fa-star bgc-non"></i></span>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fin votre liste ici -->
+        <footer class="container text-center">
+          <p>Copyright 2022 &copy; all right reserved.</p>
+        </footer>
+      </div>
+    </main>
+    <!-- main component -->
+    <footer></footer>
+    <script src="../../../js/admin.js"></script>
+  </body>
+</html>
