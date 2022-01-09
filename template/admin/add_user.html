@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant YouCode</title>
+    <!-- link style css -->
+    <link rel="stylesheet" href="../../css/dashboard.css" />
+    <link rel="stylesheet" href="../../css/user.css">
+    <!-- bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <header class="head__er">
+        <nav class="sidebar">
+            <ul>
+                <li class="sidebar__child__1" onclick="">
+                    <a href="#" class="bars__times" onclick="menu__toogle();">
+                        <span class="side_bars"><i class="fas fa-bars"></span></i>
+                        <h3 class="you_restaurant">YouRestaurant</h3>
+                        <span class="side_times"><i class="fas fa-times"></i></span>
+                    </a>
+                </li>
+                <li class="search">
+                    <input type="search" placeholder="Chercher" />
+                    <span><i class="fas fa-search"></i></span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-cookie"></i></span>
+                        <span>Plat du jour</span>
+                    </a>
+                </li>
+                <li title="Menu du semaine">
+                    <a href="menu.html">
+                        <span class="icon"><i class="fas fa-poll-h"></i></span>
+                        <span>Menu du semaine</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="commande-plats.html">
+                        <span class="icon"><i class="fas fa-poll-h"></i></span>
+                        <span>Commandes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="calendrier.html">
+                        <span class="icon">
+                            <i class="fas fa-calendar-week"></i>
+                        </span>
+                        <span>Calendrier</span>
+                    </a>
+                </li>
+                <li class="mon-pos">
+                    <a href="lists-users.html">
+                        <span class="icon">
+                            <i class="fas fa-cog"></i>
+                        </span>
+                        <span>Paramètre</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profil-admin.html">
+                        <span class="icon">
+                            <i class="fas fa-user-circle"></i>
+                        </span>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../index.html">
+                        <span class="icon">
+                            <i class="fas fa-sign-out-alt"></i>
+                        </span>
+                        <span>Se deconnecté</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="nav__bar">
+            <!-- <div class="nav__bar_item toogle">
+            <span class="menu_bars"><i class="fas fa-bars"></span></i>
+            <span class="menu_times"><i class="fas fa-times"></i></span>
+        </div> -->
+            <div class="nav__bar_item">
+                <div class="search">
+                    <input type="search" placeholder="Chercher" />
+                    <span><i class="fas fa-search"></i></span>
+                </div>
+                <div class="plus__down" onclick="puls__down();">
+                    <span><i class="fas fa-plus"></i><i class="fas fa-caret-down"></i></span>
+                    <ul class="plus__down__ul">
+                        <div class="plus_div"><span><i class="fas fa-caret-up"></i></span></div>
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                        <li><a href="#">Option 4</a></li>
+                    </ul>
+                </div>
+                <div class="profile_admin">
+                    <img src="../../assets/images/profile.jpeg" alt="profile" />
+                    <span>Admin</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main component -->
+    <main class="main__body">
+        <div class="content_">
+            <!-- votre liste ici -->
+            <div class="add__user">
+
+                <div class="form_container">
+                    <img src="../../assets/images/head-removebg-preview.png" alt="head" class="head_img">
+                    <form class="form">
+                        <h1>Ajouter un utilisateur</h1>
+                        <div class="test">
+
+
+                            <input type="text" id="nom" class="input" placeholder="Nom d'utilisateur  " name="nom"
+                                max="20000" min="0" required>
+
+                            <input type="email" id="email" class="input" placeholder="Email" name="email" max="20000"
+                                min="0" required>
+
+                            <input list="roles" name="role" id="role" placeholder="  Role" class="input" required>
+                            <datalist id="roles">
+                                <option value="Staff">
+                                <option value="Admiistratur">
+                                <option value=" Apprenant">
+                                <option value=" Service de restaurant">
+                            </datalist>
+
+
+
+
+                            <input list="Status" name="status" id="status" placeholder=" Status" class="input" required>
+                            <datalist id="Status">
+                                <option value="Active">
+                                <option value="Désactive">
+                            </datalist>
+
+
+
+
+                        </div>
+                        <button class="boton"> Ajouter</button>
+
+                    </form>
+
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+    <!-- main component -->
+    <footer></footer>
+    <script>
+        function list__cate() {
+            let cat = document.querySelector('.cat');
+            cat.classList.toggle('active');
+            let body = document.querySelector('.add__user');
+            body.classList.toggle('active');
+        }
+    </script>
+    <script src="../../js/admin.js"></script>
+</body>
+
+</html>
