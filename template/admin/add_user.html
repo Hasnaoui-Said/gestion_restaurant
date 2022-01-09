@@ -62,11 +62,11 @@
                     </a>
                 </li>
                 <li class="mon-pos">
-                    <a href="setting.html">
+                    <a href="lists-users.html">
                         <span class="icon">
                             <i class="fas fa-cog"></i>
                         </span>
-                        <span>Parrametre</span>
+                        <span>Paramètre</span>
                     </a>
                 </li>
                 <li>
@@ -118,7 +118,7 @@
     <main class="main__body">
         <div class="content_">
             <!-- votre liste ici -->
-            <div class="list__users">
+            <div class="add__user">
 
                 <div class="form_container">
                     <img src="../../assets/images/head-removebg-preview.png" alt="head" class="head_img">
@@ -128,15 +128,16 @@
 
 
                             <input type="text" id="nom" class="input" placeholder="Nom d'utilisateur  " name="nom"
-                                max="20000" required>
+                                max="20000" min="0" required>
 
                             <input type="email" id="email" class="input" placeholder="Email" name="email" max="20000"
-                                 required>
+                                min="0" required>
 
                             <input list="roles" name="role" id="role" placeholder="  Role" class="input" required>
                             <datalist id="roles">
+                                <option value="Staff">
                                 <option value="Admiistratur">
-                                <option value=" Apprenant/Staff">
+                                <option value=" Apprenant">
                                 <option value=" Service de restaurant">
                             </datalist>
 
@@ -160,14 +161,8 @@
                 </div>
             </div>
 
-          
 
-        
-         
-           
-
-                <!-- fin votre liste ici -->
-            </div>
+        </div>
     </main>
     <!-- main component -->
     <footer></footer>
@@ -175,7 +170,7 @@
         function list__cate() {
             let cat = document.querySelector('.cat');
             cat.classList.toggle('active');
-            let body = document.querySelector('.list__users');
+            let body = document.querySelector('.add__user');
             body.classList.toggle('active');
         }
     </script>
