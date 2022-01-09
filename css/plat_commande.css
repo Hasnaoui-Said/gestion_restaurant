@@ -10,16 +10,6 @@ body {
   box-sizing: border-box;
   background-color: var(--bgc);
 }
-.container {
-  margin: 5%;
-}
-.Poulet_img .img img {
-  width: 100px;
-  height: 80px;
-}
-.main-body {
-  padding: 15px;
-}
 .card {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   position: relative;
@@ -31,4 +21,108 @@ body {
   background-clip: border-box;
   border: 0 solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+}
+.list-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+  gap: 1%;
+}
+.commades-feed {
+  padding: 5px 7.5px;
+}
+.commades-feed:nth-last-of-type(2) {
+  flex-basis: 65%;
+}
+.commades-feed:nth-last-of-type(1) {
+  flex-basis: 35%;
+}
+.commandes {
+  display: flex;
+  flex-direction: column;
+}
+.commandes .plats-au:last-child {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+  border: var(--border-red);
+  margin: 5px;
+}
+.commandes .plats-au .plat-1 {
+  background-color: yellow;
+  padding: 2px;
+}
+.commandes .plats-au .plat-2 {
+  background-color: rgb(0, 255, 42);
+  padding: 2px;
+}
+
+.commandes .plats-hier:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+  border: var(--border-red);
+  margin: 5px;
+}
+.commandes .plats-hier .plat-1 {
+  background-color: yellow;
+  padding: 2px;
+}
+.commandes .plats-hier .plat-2 {
+  background-color: rgb(0, 255, 42);
+  padding: 2px;
+}
+@media screen and (max-width: 1060px) {
+  .commades-feed:nth-last-of-type(1) {
+    flex-basis: 65%;
+  }
+  .commades-feed:nth-last-of-type(2) {
+    flex-basis: 35%;
+  }
+  /* .row-commandes:nth-of-type(1) {
+    flex-basis: 60%;
+  }
+  .row-commandes:nth-of-type(2) {
+    flex-basis: 40%;
+  }
+  .container.active .item-commandes {
+    flex-direction: column;
+  } */
+}
+
+.ls-plat ul {
+  margin-left: -25px;
+  list-style-image: url(../assets/images/tick.svg);
+}
+.ls-plat ul li {
+  font-size: 1.3rem;
+}
+.avatar div {
+  position: relative;
+}
+.avatar img {
+  position: absolute;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+.avatar img:nth-child(2) {
+  margin-left: 25px;
+}
+.avatar img:nth-child(3) {
+  margin-left: 40px;
+}
+.avatar div span {
+  position: absolute;
+  margin-left: 80px;
+  margin-top: 25px;
+}
+
+.quantite_commande h4 {
+  background-color: #fbcc34;
+  border-radius: 3.5px;
+  color: #fff;
+  margin: 20px 20px 40px 20px;
+  padding: 3px;
 }
