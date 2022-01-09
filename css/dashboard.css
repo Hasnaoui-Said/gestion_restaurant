@@ -311,7 +311,7 @@ body {
   height: 90vh;
   overflow: auto;
   margin: 0;
-  padding: 25px 15px;
+
   transition: 0.5s all ease-in-out;
 }
 /* fin nav bar */
