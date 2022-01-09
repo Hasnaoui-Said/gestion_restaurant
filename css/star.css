@@ -15,6 +15,7 @@ body {
 }
 .body{
   height: 100%;
+  color: aliceblue;
 }
 .avis {
   display: flex;
@@ -23,27 +24,25 @@ body {
   flex-direction: column;
   height: 100%;
   gap: 35px;
-  background: rgba(255, 255, 255, 0.363);
-  color: #fff;
   font-size: 25px;
 }
 .avis a {
-  color: #fff;
-  background: #fd4;
+  color: #272727;
   padding: 4px 20px;
-  border: none;
+  border: #272727 2px solid;
   text-decoration: none;
   border-radius: 5px;
   font-size: 25px;
+  transition: all 0.3s ease-in-out;
 }
 .avis a:hover {
-  color: #fd4;
-  background: #fff;
+  color: #fff;
+  background: #272727;
   transition: all 0.2s ease;
 }
 .container__star {
   position: relative;
-  background: rgba(8, 31, 48, 0.5);
+  background: rgba(9, 141, 241, 0.5);
   padding: 10px 20px;
   border: 1px solid #444;
   border-radius: 5px;
@@ -52,20 +51,42 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+.card {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
 .decription h3{
   text-align: center;
-  color: black;
+  font-size: 23px;
+  height: 1px;
+  margin-bottom: 22px;
+  color: rgb(32, 31, 31);
 }
 .container__star .request {
   text-align: center;
-  width: 75%;
+  width: 100%;
+  font-size: 19px;
+  color: #3d3b3b;
 }
 .container__star .post {
   display: none;
 }
 .container__star .text h5{
   font-size: 25px;
-  color: #fff;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+.container__star .text p{
+  font-size: 18px;
+  color: rgb(61, 61, 61);
   font-weight: 500;
 }
 .container__star .edit {
@@ -78,7 +99,7 @@ body {
   cursor: pointer;
 }
 .container__star .edit:hover {
-  color: #fff;
+  color: rgb(63, 63, 63);
   text-decoration: underline #fd4;
 }
 .container__star .star-widget input {
@@ -87,21 +108,21 @@ body {
 
 .container__star .star-widget label {
   font-size: 40px;
-  color: #fff;
+  color: rgb(236, 236, 236);
   padding: 35px;
   float: right;
   transition: all 0.2s ease-in-out;
 }
 .container__star input:not(:checked) ~ label:hover,
 .container__star input:not(:checked) ~ label:hover ~ label {
-  color: #fd4;
+  color: #fbcc34;
   transform: scale(1.1);
 }
 .container__star input:checked ~ label {
-  color: #fd4;
+  color: #fbcc34;
 }
 .container__star input#rate-5:checked ~ label {
-  color: #fe7;
+  color: #fbcc34;
   text-shadow: 0 0 20px #952;
 }
 .container__star #rate-1:checked ~ form .div:before {
@@ -143,15 +164,15 @@ body {
   height: 100%;
   width: 100%;
   outline: none;
-  color: #eee;
-  border: 1px solid #333;
-  background: #222;
-  padding: 10px;
+  color: #333;
+  border: 1px solid #eee;
+  background: rgb(236, 236, 236);
+  padding: 12px;
   font-size: 17px;
   resize: none;
 }
 .container__star .textarea textarea:focus {
-  border-color: #444;
+  border-color: rgb(236, 236, 236);
 }
 .container__star form .btn {
   height: 45px;
@@ -162,9 +183,10 @@ body {
   height: 100%;
   width: 100%;
   border: 1px solid #444;
+  border-radius: 3px;
   outline: none;
-  background: #222;
-  color: #999;
+  background: #fff;
+  color: #000;
   font-size: 17px;
   font-weight: 500;
   text-transform: uppercase;
@@ -173,6 +195,7 @@ body {
 }
 .container__star form .btn button:hover {
   background: #1b1b1b;
+  color: #fff;
 }
 @media screen and (max-width:400px) {
   .container__star .request {

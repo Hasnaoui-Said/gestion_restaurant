@@ -311,117 +311,20 @@ body {
   height: 90vh;
   overflow: auto;
   margin: 0;
-
+  padding: 5px 2px;
   transition: 0.5s all ease-in-out;
 }
 /* fin nav bar */
 .container.active {
   width: 100%;
 }
-.card {
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 0 solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
-}
-.df {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.m_5 {
-  margin: 5px;
-}
-.m_r_5 {
-  margin-right: 5px;
-}
-.m_l_5 {
-  margin-left: 5px;
-}
-.m_b_5 {
-  margin-bottom: 5px;
-}
-.m_t_5 {
-  margin-top: 5px;
-}
-.item-commandes {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  gap: 2%;
-}
-.row-commandes {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 2%;
-}
-.row-commandes:nth-of-type(1) {
-  flex-basis: 70%;
-}
-.row-commandes:nth-of-type(2) {
-  flex-basis: 30%;
-}
+
+
 .mon-pos{
   background-color: #fbcc34;
   color: #fff;
   margin-left: -5px;
 }
-@media screen and (max-width: 1060px) {
-  .row-commandes:nth-of-type(1) {
-    flex-basis: 60%;
-  }
-  .row-commandes:nth-of-type(2) {
-    flex-basis: 40%;
-  }
-  .container.active .item-commandes {
-    flex-direction: column;
-  }
-}
-
-.ls-plat ul {
-  margin-left: -25px;
-  list-style-image: url(../assets/images/tick.svg);
-}
-.ls-plat ul li {
-  font-size: 2rem;
-}
-.avatar div {
-  position: relative;
-}
-.avatar img {
-  position: absolute;
-  border-radius: 50%;
-  margin-left: 10px;
-  margin-top: 15px;
-}
-.avatar img:nth-child(2) {
-  margin-left: 25px;
-}
-.avatar img:nth-child(3) {
-  margin-left: 40px;
-}
-.avatar div span {
-  position: absolute;
-  margin-left: 80px;
-  margin-top: 25px;
-}
-
-.quantite_commande h4 {
-  background-color: #fbcc34;
-  border-radius: 3.5px;
-  color: #fff;
-  margin: 20px 20px 40px 20px;
-  padding: 3px;
-}
-
 @media screen and (max-width: 900px) {
   .main__body {
     width: calc(100% - 62px);
