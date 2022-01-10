@@ -618,7 +618,7 @@ button[disabled]:hover {
 }
 
 .footer__copyright {
-  color: gray;
+  color: #272727;
   font-size: 15px;
   text-align: center;
 }
