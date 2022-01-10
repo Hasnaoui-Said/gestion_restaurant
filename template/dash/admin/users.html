@@ -118,7 +118,7 @@
                 </ul>
             </div>
             <div class="profile_admin">
-                <img src="../../../assets/images/av1.jpg" alt="profile" />
+                <img src="../../../../assets/images/av1.jpg" alt="profile" />
                 <span>Mohammed </span>
             </div>
         </div>
@@ -129,28 +129,34 @@
       <div class="content_">
         <div class="list__users">
           <div class="img">
-              <img src="../../../assets/images/userss.png" alt="list-plats" >
+              <img src="../../../../assets/images/head-removebg-preview.png" alt="list-plats">
           </div>
-          <div class="text card">
-              <h1 class="m-lg-3">L'utilisateurs</h1>
+          <div class="text ">
+              <h1 class="m-lg-3">Les utilisateurs</h1>
           </div>
-          <div class="nav__lists card">
+          <div class="nav__lists container ">
               <div class="cat m-lg-2" onclick="list__cate()">
                   <span><i class="fas fa-th-list"></i></span>
                   <h4>Utilisateur</h4>
                   <div class="lists">
                       <ul>
                           <div class="plus_div"><span><i class="fas fa-caret-up"></i></span></div>
-                          <li class="">
+                          <li class="child1">
                               <a href="">
                                   <span><i class="fad fa-paw-alt"></i></span>
                                   <span>Tous</span>
                               </a>
                           </li>
-                          <li class="child1">
+                          <li class="">
                               <a href="">
                                   <span><i class="fad fa-paw-alt"></i></span>
-                                  <span>Apprenant / staff</span>
+                                  <span>Apprenant </span>
+                              </a>
+                          </li>
+                          <li class="">
+                              <a href="">
+                                  <span><i class="fad fa-paw-alt"></i></span>
+                                  <span>Staff </span>
                               </a>
                           </li>
                           <li>
@@ -170,7 +176,7 @@
               </div>
               <div class="search__plus">
                   <div class="search">
-                      <input type="search" placeholder="Rechercher">
+                      <input type="search" placeholder="Chercher">
                       <span><i class="fas fa-search"></i></span>
                   </div>
                   <div class="add__user">
@@ -181,7 +187,7 @@
               </div>
           </div>
           <div class="container">
-              <div class="table-responsive card">
+              <div class="table-responsive ">
                   <table class="table">
                       <caption>
                           <span><i class="fas fa-chevron-left"></i></span>
@@ -203,7 +209,7 @@
                               <th>1</th>
                               <td> User1</td>
                               <td>mm1@gmail.com</td>
-                              <td>Apprenat</td>
+                              <td>Apprenant </td>
                               <td>Active</td>
                               <td>
                                   <a href="modifier_user.html"> <span title="Modifier"><i
@@ -215,7 +221,7 @@
                               <th>2</th>
                               <td> User2</td>
                               <td>mm2@gmail.com</td>
-                              <td>Apprenat</td>
+                              <td>Staff</td>
                               <td>Active</td>
                               <td>
                                   <a href="modifier_user.html"> <span title="Modifier"><i
@@ -227,7 +233,7 @@
                               <th>3</th>
                               <td> User3</td>
                               <td>mm3@gmail.com</td>
-                              <td>Apprenat</td>
+                              <td>Apprenant</td>
                               <td>Active</td>
                               <td>
                                   <a href="modifier_user.html"> <span title="Modifier"><i
@@ -239,7 +245,7 @@
                               <th>4</th>
                               <td> User4</td>
                               <td>mm4@gmail.com</td>
-                              <td>Apprenat</td>
+                              <td>Administrateur</td>
                               <td>Active</td>
                               <td>
                                   <a href="modifier_user.html"> <span title="Modifier"><i
@@ -251,7 +257,7 @@
                               <th>5</th>
                               <td> User5</td>
                               <td>mm5@gmail.com</td>
-                              <td>Apprenat</td>
+                              <td>staff</td>
                               <td>Active</td>
                               <td>
                                   <a href="modifier_user.html"> <span title="Modifier"><i
@@ -269,5 +275,13 @@
     <!-- main component -->
     <footer></footer>
     <script src="../../../js/admin.js"></script>
+    <script>
+      function list__cate() {
+          let cat = document.querySelector('.cat');
+          cat.classList.toggle('active');
+          let body = document.querySelector('.list__users');
+          body.classList.toggle('active');
+      }
+  </script>
   </body>
 </html>
