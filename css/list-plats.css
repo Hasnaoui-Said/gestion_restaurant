@@ -1,265 +1,260 @@
-html,
-body{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: auto;
-    box-sizing: border-box;
+:root {
+  --bgc: #fff;
+  --yellow: #fbcc34;
 }
 
-.list__plats{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 30px;
-    align-items: center;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
 }
-.list__plats .img{
-    width: 100%;
-    background: rgb(250, 243, 229);
+
+.list__plats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
 }
-h1{
-    border-bottom: 3px solid #fbcc34;
-    padding: 3px 0;
+.list__plats .img {
+  width: 100%;
+  background: rgb(250, 243, 229);
 }
-.list__plats .img img{
-    width: 100%;
-    height: 200px;
+h1 {
+  border-bottom: 3px solid var(--yellow);
+  padding: 3px 0;
 }
-.list__plats .nav__lists{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 !important;
-    margin: 0 !important;
-    align-items: center;
+.list__plats .img img {
+  width: 100%;
+  height: 200px;
 }
-.list__plats .nav__lists .cat:hover{
-    cursor: pointer;
+.list__plats .nav__lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 !important;
+  margin: 0 !important;
+  align-items: center;
+}
+.list__plats .nav__lists .cat:hover {
+  cursor: pointer;
 }
 .list__plats .nav__lists .cat,
-.list__plats .nav__lists .search__plus{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    width: 100%;
+.list__plats .nav__lists .search__plus {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
 }
-.list__plats .nav__lists .cat span .fas{
-    font-size: 25px;
-    color: #fbcc34;
+.list__plats .nav__lists .cat span .fas {
+  font-size: 25px;
+  color: #fbcc34;
 }
-.list__plats .nav__lists .search__plus{
-    justify-content: flex-end;
+.list__plats .nav__lists .search__plus {
+  justify-content: flex-end;
 }
-.list__plats .nav__lists .cat .lists ul li{
-    display: flex;
-    margin-right: 20px;
-    margin-top: 10px;
-    padding-left: 10px;
-    border-radius: 5px;
-   
-}
-
-.list__plats .nav__lists .cat .lists ul .child1{
-    background: #fbcc34;
-}
-.list__plats .nav__lists .cat .lists ul li:hover{
-    background: #fbcc34;
-    color: white;
-}
-.list__plats .nav__lists .cat .lists ul li a{
-    
-    text-decoration: none;
-    color: black;
-}
-    .list__plats .nav__lists .cat{
-    position: relative;
-}
-.list__plats .nav__lists .cat .lists{
-    display: none;
-    position: absolute;
-    background-color: rgb(250, 243, 229);
-    border-radius: 5px;
-    margin-top: 170px;
-    z-index: 100;
-    width: 250px;
-    
+.list__plats .nav__lists .cat .lists ul li {
+  display: flex;
+  margin-right: 20px;
+  margin-top: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
 }
 
-.plus_div{
-    position: absolute;
-    top: -16px;
-    left: 8px;
+.list__plats .nav__lists .cat .lists ul .child1 {
+  background: #fbcc34;
 }
-.plus_div span .fas{
-    color: rgb(250, 243, 229);
+.list__plats .nav__lists .cat .lists ul li:hover {
+  background: #fbcc34;
+  color: white;
 }
-.list__plats .nav__lists .active .lists{
-    display: block;
-    border:1px solid #fbcc34;
+.list__plats .nav__lists .cat .lists ul li a {
+  text-decoration: none;
+  color: black;
 }
-.list__plats .nav__lists .search__plus .add__cat .fas{
-    font-size: 20px;
-    color: black;
+.list__plats .nav__lists .cat {
+  position: relative;
+}
+.list__plats .nav__lists .cat .lists {
+  display: none;
+  position: absolute;
+  background-color: rgb(250, 243, 229);
+  border-radius: 5px;
+  margin-top: 170px;
+  z-index: 100;
+  width: 250px;
+}
+
+.plus_div {
+  position: absolute;
+  top: -16px;
+  left: 8px;
+}
+.plus_div span .fas {
+  color: rgb(250, 243, 229);
+}
+.list__plats .nav__lists .active .lists {
+  display: block;
+  border: 1px solid #fbcc34;
+}
+.list__plats .nav__lists .search__plus .add__cat .fas {
+  font-size: 20px;
+  color: black;
 }
 
 .list__plats .nav__lists .search__plus .search span:hover,
-.list__plats .nav__lists .search__plus .add__cat:hover{
-    background: white;
-    color:black ;
-    background:rgb(250, 243, 229) ;
-    border:1px solid #fbcc34;
+.list__plats .nav__lists .search__plus .add__cat:hover {
+  background: white;
+  color: black;
+  background: rgb(250, 243, 229);
+  border: 1px solid #fbcc34;
 }
 
-.list__plats .nav__lists .search__plus .add__cat{
-    background: #fbcc34;
-    border-radius: 2px;
-    padding: 5px;
-    height: 30px;
-    width: 30px;
-    text-align: center;
+.list__plats .nav__lists .search__plus .add__cat {
+  background: #fbcc34;
+  border-radius: 2px;
+  padding: 5px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
 }
 
-.list__plats .nav__lists .search__plus .search{
-    position: relative;
+.list__plats .nav__lists .search__plus .search {
+  position: relative;
 }
-.list__plats .nav__lists .search__plus .search input{
-    width: 260px;
-    height: 30px;
-    font-size: medium;
-    padding-left: 12px;
-    outline: none;
-    border: #fbcc34 solid 1px;
-    border-radius: 3.5px;
+.list__plats .nav__lists .search__plus .search input {
+  width: 260px;
+  height: 30px;
+  font-size: medium;
+  padding-left: 12px;
+  outline: none;
+  border: #fbcc34 solid 1px;
+  border-radius: 3.5px;
 }
-.list__plats .nav__lists .search__plus .search span{
-    position: absolute;
-    right: 0;
-    background: #fbcc34;
-    width: 30px;
-    height: 30px;
-    border-radius: 3.5px;
+.list__plats .nav__lists .search__plus .search span {
+  position: absolute;
+  right: 0;
+  background: #fbcc34;
+  width: 30px;
+  height: 30px;
+  border-radius: 3.5px;
 }
-.list__plats .nav__lists .search__plus .search .fas{
-    position: relative;
-    left: 15%;
-    top: 15%;
-    font-size: 20px;
+.list__plats .nav__lists .search__plus .search .fas {
+  position: relative;
+  left: 15%;
+  top: 15%;
+  font-size: 20px;
 }
 .list__plats .table caption {
-    text-align: center;
-    margin-top: 20px;
-    caption-side:bottom;
+  text-align: center;
+  margin-top: 20px;
+  caption-side: bottom;
 }
 .list__plats .table caption span {
-    text-align: center;
-    margin: 0 3.5px;
-    padding: .5px 4px;
-  }
-  .list__plats .table caption span:first-child,
-  .list__plats .table caption span:last-child {
-    color: black;
-  }
-  .list__plats .table caption span:nth-child(2) {
-    color: #fff;
-    background-color: #fbcc34;
-  }
-  .list__plats .table caption span:hover {
-    color: blue;
-    background-color: #fbcc34;
-    cursor: pointer;
-    text-decoration: blue underline;
-  }
-  
-  .list__plats .table thead{
-    border: none;
-  }
-  .list__plats .table .center_t th,
-    .list__plats .table .center_t td{
-    text-align: center;
-    font-size: large;
-  }
-  .list__plats .table .center_t td p{
-display: inline;
-  }
-  .list__plats .table .center_t td a{
-color: #fbcc34;
-cursor: pointer;
-  }
-  .list__plats .table .center_t td a:hover{
-    color: gray; 
-    text-decoration: underline; 
-  }
-  .modal-header h2{
-      color: #fbcc34;
-      }
-      .modal-body h3{
-          color: gray ;
-          }
-  .modal-body ul{
-list-style: none;
-  }
-
-  .list__plats .table .center_t .fas{
-    font-size: 17px;
-    width: 25px;
-    padding: 3px;
-    color: gray;
+  text-align: center;
+  margin: 0 3.5px;
+  padding: 0.5px 4px;
 }
-.list__plats .table .center_t .fas:hover{
-    font-size: 17px;
-    width: 25px;
-    padding: 3px;
-    color: white;
-    background: gray;
-    border-radius: 3px;
+.list__plats .table caption span:first-child,
+.list__plats .table caption span:last-child {
+  color: black;
+}
+.list__plats .table caption span:nth-child(2) {
+  color: #fff;
+  background-color: #fbcc34;
+}
+.list__plats .table caption span:hover {
+  color: blue;
+  background-color: #fbcc34;
+  cursor: pointer;
+  text-decoration: blue underline;
+}
+
+.list__plats .table thead {
+  border: none;
+}
+.list__plats .table .center_t th,
+.list__plats .table .center_t td {
+  text-align: center;
+  font-size: large;
+}
+.list__plats .table .center_t td p {
+  display: inline;
+}
+.list__plats .table .center_t td a {
+  color: #fbcc34;
+  cursor: pointer;
+}
+.list__plats .table .center_t td a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+.modal-header h2 {
+  color: #fbcc34;
+}
+.modal-body h3 {
+  color: gray;
+}
+.modal-body ul {
+  list-style: none;
+}
+
+.list__plats .table .center_t .fas {
+  font-size: 17px;
+  width: 25px;
+  padding: 3px;
+  color: gray;
+}
+.list__plats .table .center_t .fas:hover {
+  font-size: 17px;
+  width: 25px;
+  padding: 3px;
+  color: white;
+  background: gray;
+  border-radius: 3px;
 }
 .image {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 200px;
-  }
-.image img
-{
-    width: 50%;
-    border-radius: 50%;
-   object-fit: cover;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+}
+.image img {
+  width: 50%;
+  border-radius: 50%;
+  object-fit: cover;
 }
 .modal-body h3,
-.modal-body p{
-    text-align: center;
+.modal-body p {
+  text-align: center;
 }
 
+@media screen and (max-width: 575px) {
+  .list__plats .nav__lists .search__plus .search input {
+    width: 200px;
+  }
 
-@media screen and (max-width:575px) {
-    
-    .list__plats .nav__lists .search__plus .search input{
-        width: 200px;
-    }
-    
-    .list__plats .nav__lists .cat{
-        width: auto;
-    }
-    
-    .list__plats .nav__lists .cat .lists{
-        margin-top: 170px;
-        width: 160px;
-    }
-    .nav__lists .cat,
-    .nav__lists .search__plus{
-        margin:0 3% !important;
-    }
-   .table{
-       border-top: none;
-   }
+  .list__plats .nav__lists .cat {
+    width: auto;
+  }
+
+  .list__plats .nav__lists .cat .lists {
+    margin-top: 170px;
+    width: 160px;
+  }
+  .nav__lists .cat,
+  .nav__lists .search__plus {
+    margin: 0 3% !important;
+  }
+  .table {
+    border-top: none;
+  }
 }
-@media screen and (max-width:400px) {
-   
-   .nav__lists .cat h4{
-       display: none;
-   }
-
-  
-    
- }
+@media screen and (max-width: 400px) {
+  .nav__lists .cat h4 {
+    display: none;
+  }
+}
