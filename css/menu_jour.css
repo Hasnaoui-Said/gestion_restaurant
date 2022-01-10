@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{ 
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+.user_nav{
+    width: 100%;
+    border: 2px solid red;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo a {
+    text-decoration: none;
+    color:black;
+    border: black 2px solid;
+}
+.choice_container{
+    align-self: flex-end;
+}
+.choices{
+    text-decoration: none;
+}
+.list{
+    display: none;
+    text-decoration: none;
+}
+.middle_background{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url(/assets/images/lunch/lunch-header-bg.webp);
+    background-size: 100%;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu_logo{
+    border: 2px solid white;
+    color: white;
+    width: 60%; 
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.menu_of_day{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.presentation{
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+.presentation h1{
+    font-size: 20px;
+    margin-bottom: 8px;
+    margin-left: 15px;
+}
+.presentation p{
+
+}
+.lunch{
+    box-sizing: border-box;
+}
+.first_lunch{
+    margin-bottom: 2%;
+    border: 3px solid grey;
+    height:368px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+}
+.chicken_dish{
+    width: 98% ;
+    height:160px;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+.plat{
+    margin-top: 1%;
+    height: 100px;
+}
+.menu_of_lunch{
+    list-style-type: none;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.second_lunch{
+    margin-bottom: 2%;
+    border: 3px solid grey;
+    height:368px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+}
+.fish_dish{
+    width: 98% ;
+    height:50%;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+.show_more{
+    text-decoration: none;
+    border: 3px black solid;
+    align-self: center;
+    margin-top: 35%;
+    width: 100%;
+    height: 47px;
+    padding-left: 15px;
+
+}
+.show_more a{
+    
+    text-decoration: none;
+    color: black;
+}
+.chef_picture{
+    box-sizing: border-box;
+    height: 368px;
+}
