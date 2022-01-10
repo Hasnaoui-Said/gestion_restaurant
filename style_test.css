@@ -13,6 +13,8 @@
 
 .page_login {
   background-color: var(--bgc);
+  width: 100%;
+  overflow: scroll ;
 }
 .cont {
   display: flex;
@@ -26,7 +28,8 @@
   display: none;
 }
 .mobile__logo {
-  margin-top: 10px;
+  margin-top: 100px;
+  margin-bottom: -10px;
   padding: 13px 0;
   color: #fff;
   background-color: var(--black-color);
@@ -148,6 +151,9 @@ form {
   .cont {
     flex-direction: row;
     align-items: stretch;
+  }
+  .mobile__logo{
+    margin-top: 10px;
   }
 }
 @media screen and (min-width: 768px) {
