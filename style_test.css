@@ -232,7 +232,7 @@ form {
     height: 100vh;
   }
   .cont .image {
-    background-image: url(../assets/images/login-bg.webp);
+    background-image: url(assets/images/login-bg.webp);
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.75);
     background-blend-mode: multiply;
