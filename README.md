@@ -1,22 +1,14 @@
-# gestion_restaurant
-Développer l'interface statique du restaurant YouCode (frontend)
-# Restaurant Youcode a besoin de vous pour automatiser  la procédure de réservation des plats.
-users:
-HTML5
+# Gestion_restaurant 👨🏻‍🍳👩🏻‍🍳
 
-Bootstrap
+Développement de l'interface statique du restaurant YouCode (frontend).
 
-Responsive design
+## Création d'aplication Restaurant Youcode pour automatiser la procédure de réservation des plats.
 
-Flex
+## Technologie utilisées 💻:
 
-Git
-
-UX
-
-UI
-
-SEO
-
-CSS3
-is a test discord
+* Git
+* UX/UI
+* SEO
+* HTML5
+* CSS3
+* Bootstrap
